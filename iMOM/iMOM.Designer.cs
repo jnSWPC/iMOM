@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(iMOM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPagePatient = new System.Windows.Forms.TabPage();
@@ -209,7 +209,7 @@
             this.buttonAlertDashboard.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAlertDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAlertDashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAlertDashboard.Location = new System.Drawing.Point(136, 109);
+            this.buttonAlertDashboard.Location = new System.Drawing.Point(133, 99);
             this.buttonAlertDashboard.Name = "buttonAlertDashboard";
             this.buttonAlertDashboard.Size = new System.Drawing.Size(101, 73);
             this.buttonAlertDashboard.TabIndex = 6;
@@ -471,13 +471,13 @@
             this.dataGridViewResource.Location = new System.Drawing.Point(0, 112);
             this.dataGridViewResource.MultiSelect = false;
             this.dataGridViewResource.Name = "dataGridViewResource";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridViewResource.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridViewResource.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewResource.RowHeadersVisible = false;
             this.dataGridViewResource.RowTemplate.Height = 24;
             this.dataGridViewResource.RowTemplate.ReadOnly = true;
@@ -499,8 +499,8 @@
             // Resource
             // 
             this.Resource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Resource.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Resource.DefaultCellStyle = dataGridViewCellStyle4;
             this.Resource.FillWeight = 149.2386F;
             this.Resource.HeaderText = "Link";
             this.Resource.Name = "Resource";
@@ -609,8 +609,8 @@
             this.dataGridViewReportResult.Location = new System.Drawing.Point(0, 118);
             this.dataGridViewReportResult.Name = "dataGridViewReportResult";
             this.dataGridViewReportResult.RowHeadersVisible = false;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewReportResult.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewReportResult.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewReportResult.RowTemplate.Height = 24;
             this.dataGridViewReportResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewReportResult.Size = new System.Drawing.Size(366, 229);
@@ -737,7 +737,7 @@
             // pictureBoxReport
             // 
             this.pictureBoxReport.Image = global::iMOM.Properties.Resources.Report;
-            this.pictureBoxReport.Location = new System.Drawing.Point(19, 296);
+            this.pictureBoxReport.Location = new System.Drawing.Point(19, 283);
             this.pictureBoxReport.Name = "pictureBoxReport";
             this.pictureBoxReport.Size = new System.Drawing.Size(100, 67);
             this.pictureBoxReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -748,7 +748,7 @@
             // pictureBoxChat
             // 
             this.pictureBoxChat.Image = global::iMOM.Properties.Resources.Chat;
-            this.pictureBoxChat.Location = new System.Drawing.Point(251, 201);
+            this.pictureBoxChat.Location = new System.Drawing.Point(251, 195);
             this.pictureBoxChat.Name = "pictureBoxChat";
             this.pictureBoxChat.Size = new System.Drawing.Size(94, 72);
             this.pictureBoxChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -759,7 +759,7 @@
             // pictureBoxHealthResources
             // 
             this.pictureBoxHealthResources.Image = global::iMOM.Properties.Resources.HealthRes;
-            this.pictureBoxHealthResources.Location = new System.Drawing.Point(19, 201);
+            this.pictureBoxHealthResources.Location = new System.Drawing.Point(19, 192);
             this.pictureBoxHealthResources.Name = "pictureBoxHealthResources";
             this.pictureBoxHealthResources.Size = new System.Drawing.Size(94, 75);
             this.pictureBoxHealthResources.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -770,7 +770,7 @@
             // pictureBoxScheduler
             // 
             this.pictureBoxScheduler.Image = global::iMOM.Properties.Resources.Scheduler;
-            this.pictureBoxScheduler.Location = new System.Drawing.Point(251, 113);
+            this.pictureBoxScheduler.Location = new System.Drawing.Point(251, 100);
             this.pictureBoxScheduler.Name = "pictureBoxScheduler";
             this.pictureBoxScheduler.Size = new System.Drawing.Size(94, 72);
             this.pictureBoxScheduler.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -781,7 +781,7 @@
             // pictureBoxMonitor
             // 
             this.pictureBoxMonitor.Image = global::iMOM.Properties.Resources.ECG;
-            this.pictureBoxMonitor.Location = new System.Drawing.Point(19, 113);
+            this.pictureBoxMonitor.Location = new System.Drawing.Point(19, 103);
             this.pictureBoxMonitor.Name = "pictureBoxMonitor";
             this.pictureBoxMonitor.Size = new System.Drawing.Size(94, 72);
             this.pictureBoxMonitor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -792,7 +792,7 @@
             // pictureBoxAlertDashboard
             // 
             this.pictureBoxAlertDashboard.Image = global::iMOM.Properties.Resources.Alert___Copy;
-            this.pictureBoxAlertDashboard.Location = new System.Drawing.Point(142, 113);
+            this.pictureBoxAlertDashboard.Location = new System.Drawing.Point(139, 103);
             this.pictureBoxAlertDashboard.Name = "pictureBoxAlertDashboard";
             this.pictureBoxAlertDashboard.Size = new System.Drawing.Size(91, 62);
             this.pictureBoxAlertDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -803,7 +803,7 @@
             // pictureBox911
             // 
             this.pictureBox911.Image = global::iMOM.Properties.Resources._911;
-            this.pictureBox911.Location = new System.Drawing.Point(136, 201);
+            this.pictureBox911.Location = new System.Drawing.Point(133, 195);
             this.pictureBox911.Name = "pictureBox911";
             this.pictureBox911.Size = new System.Drawing.Size(94, 72);
             this.pictureBox911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -966,7 +966,7 @@
             // pictureBoxGinaThreshold
             // 
             this.pictureBoxGinaThreshold.Image = global::iMOM.Properties.Resources.GinaThreshold;
-            this.pictureBoxGinaThreshold.Location = new System.Drawing.Point(245, 215);
+            this.pictureBoxGinaThreshold.Location = new System.Drawing.Point(238, 268);
             this.pictureBoxGinaThreshold.Name = "pictureBoxGinaThreshold";
             this.pictureBoxGinaThreshold.Size = new System.Drawing.Size(100, 81);
             this.pictureBoxGinaThreshold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -976,7 +976,7 @@
             // pictureBoxGinaRefill
             // 
             this.pictureBoxGinaRefill.Image = global::iMOM.Properties.Resources.GinaRefill;
-            this.pictureBoxGinaRefill.Location = new System.Drawing.Point(130, 215);
+            this.pictureBoxGinaRefill.Location = new System.Drawing.Point(123, 268);
             this.pictureBoxGinaRefill.Name = "pictureBoxGinaRefill";
             this.pictureBoxGinaRefill.Size = new System.Drawing.Size(100, 81);
             this.pictureBoxGinaRefill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -987,7 +987,7 @@
             // pictureBoxGinaAlert
             // 
             this.pictureBoxGinaAlert.Image = global::iMOM.Properties.Resources.Alert_Gina;
-            this.pictureBoxGinaAlert.Location = new System.Drawing.Point(17, 215);
+            this.pictureBoxGinaAlert.Location = new System.Drawing.Point(10, 268);
             this.pictureBoxGinaAlert.Name = "pictureBoxGinaAlert";
             this.pictureBoxGinaAlert.Size = new System.Drawing.Size(94, 81);
             this.pictureBoxGinaAlert.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -997,9 +997,9 @@
             // pictureBoxGinaHome
             // 
             this.pictureBoxGinaHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxGinaHome.Location = new System.Drawing.Point(272, 3);
+            this.pictureBoxGinaHome.Location = new System.Drawing.Point(285, 3);
             this.pictureBoxGinaHome.Name = "pictureBoxGinaHome";
-            this.pictureBoxGinaHome.Size = new System.Drawing.Size(91, 70);
+            this.pictureBoxGinaHome.Size = new System.Drawing.Size(78, 55);
             this.pictureBoxGinaHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxGinaHome.TabIndex = 18;
             this.pictureBoxGinaHome.TabStop = false;
