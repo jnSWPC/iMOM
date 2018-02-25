@@ -35,6 +35,9 @@ namespace iMOM
             RoundingPictureBox(pictureBoxHealthResources);
             RoundingPictureBox(pictureBoxChat);
             RoundingPictureBox(pictureBoxReport);
+            RoundingPictureBox(pictureBoxGinaAlert);
+            RoundingPictureBox(pictureBoxGinaRefill);
+            RoundingPictureBox(pictureBoxGinaThreshold);
             RoundingButton(buttonAlertDashboard);
         }
 
@@ -106,6 +109,7 @@ namespace iMOM
             tabControlMain.TabPages.Remove(tabPage911);
             tabControlMain.TabPages.Remove(tabPageProvideChat);
             tabControlMain.TabPages.Remove(tabPageReport);
+            tabControlMain.TabPages.Remove(tabPageGina);
         }
 
 
@@ -464,6 +468,38 @@ normal, stomach visible, bladder visible, hands both visible, feet both visible.
                 richTextBoxReportResult.Text =
                     @"A blood pressure of 145 mm HG observed (Normal < than 140/90 mm Hg.)";
             }
+        }
+
+        private void tabControlMain_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControlMain.SelectedTab == tabPageProvider)
+            {
+                dataGridViewProviderPatientList.Rows.Clear();
+
+                dataGridViewProviderPatientList.Columns[0].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+                dataGridViewProviderPatientList.Columns[1].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+                dataGridViewProviderPatientList.Rows.Add("W12345", "Gina Gervae", "3/11/1985");
+            }
+        }
+
+        private void dataGridViewProviderPatientList_Click(object sender, EventArgs e)
+        {
+            tabControlMain.TabPages.Remove(tabPagePatient);
+            tabControlMain.TabPages.Remove(tabPageProvider);
+            tabControlMain.TabPages.Add(tabPageGina);
+            tabControlMain.SelectedTab = tabPageGina;
+        }
+
+        private void pictureBoxGinaHome_Click_1(object sender, EventArgs e)
+        {
+            tabControlMain.TabPages.Remove(tabPageGina);
+            Home();
+        }
+
+        private void pictureBoxGinaRefill_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

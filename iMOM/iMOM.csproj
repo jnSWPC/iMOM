@@ -201,6 +201,21 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundProvider.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundGina.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alert-Gina.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GinaRefill.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GinaThreshold.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

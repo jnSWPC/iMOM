@@ -93,6 +93,16 @@ namespace iMOM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Alert_Gina {
+            get {
+                object obj = ResourceManager.GetObject("Alert-Gina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background {
             get {
                 object obj = ResourceManager.GetObject("Background", resourceCulture);
@@ -103,9 +113,29 @@ namespace iMOM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BackgroundGina {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundGina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BackGroundiMOM {
             get {
                 object obj = ResourceManager.GetObject("BackGroundiMOM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BackgroundProvider {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundProvider", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +216,26 @@ namespace iMOM.Properties {
         internal static System.Drawing.Bitmap ECG {
             get {
                 object obj = ResourceManager.GetObject("ECG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GinaRefill {
+            get {
+                object obj = ResourceManager.GetObject("GinaRefill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GinaThreshold {
+            get {
+                object obj = ResourceManager.GetObject("GinaThreshold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

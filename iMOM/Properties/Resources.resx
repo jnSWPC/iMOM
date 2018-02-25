@@ -121,11 +121,14 @@
   <data name="Chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chat.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Report" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Report.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GinaRefill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GinaRefill.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Call911" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Call911.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monitor.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ECG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ECG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +139,11 @@
   <data name="homeblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\homeblue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HealthRes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HealthRes.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alert-Gina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alert-Gina.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ajax-loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ajax-loader.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +151,8 @@
   <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BlueToothPairing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlueToothPairing.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HealthRes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HealthRes.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iMOM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iMOM1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +166,20 @@
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Monitor.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="911" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\911.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackgroundWithiMomContacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackgroundWithiMomContacts.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BackgroundWithiMom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackgroundWithiMom.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackgroundProvider" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackgroundProvider.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlueToothPairing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueToothPairing.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iMOM2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iMOM2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,13 +187,13 @@
   <data name="Capture1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="911" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\911.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BackgroundGina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackgroundGina.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Scheduler" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Scheduler.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BackgroundWithiMomContacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackgroundWithiMomContacts.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GinaThreshold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GinaThreshold.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
