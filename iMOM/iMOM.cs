@@ -21,6 +21,7 @@ namespace iMOM
     public partial class iMOM : Form
     {
         private int clickcount = 0;
+        private string providerMessage = string.Empty;
 
         public iMOM()
         {
@@ -86,9 +87,13 @@ namespace iMOM
             dataGridViewAlert.Rows.Add(DateTime.Now.AddDays(-1).Date, "Subcutaneous Terbutaline infusion pump",
                 "Unable to dispense medication. Please Check.");
             dataGridViewAlert.Rows[2].DefaultCellStyle.ForeColor = Color.Red;
-            dataGridViewAlert.Rows.Add(DateTime.Now.Date, "Contraction Monitor Status",
-                "Inconsistant Contractions. Please retake the measurements ASAP.");
-            dataGridViewAlert.Rows[3].DefaultCellStyle.ForeColor = Color.Red;
+
+            if (providerMessage != string.Empty)
+            {
+                dataGridViewAlert.Rows.Add(DateTime.Now.Date, "Contraction Monitor Status", providerMessage);
+                dataGridViewAlert.Rows[dataGridViewAlert.RowCount-1].DefaultCellStyle.ForeColor = Color.Red;
+                providerMessage = string.Empty;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -110,6 +115,9 @@ namespace iMOM
             tabControlMain.TabPages.Remove(tabPageProvideChat);
             tabControlMain.TabPages.Remove(tabPageReport);
             tabControlMain.TabPages.Remove(tabPageGina);
+            tabControlMain.TabPages.Remove(tabPagePrescription);
+            tabControlMain.TabPages.Remove(tabPageThreshold);
+            tabControlMain.TabPages.Remove(tabPageProviderAlert);
         }
 
 
@@ -173,15 +181,20 @@ namespace iMOM
 
         private void Home()
         {
+            HomeWithTab(tabPagePatient);
+        }
+
+        private void HomeWithTab(TabPage tabPage)
+        {
             tabControlMain.TabPages.Add(tabPagePatient);
             tabControlMain.TabPages.Add(tabPageProvider);
-            tabControlMain.SelectedTab = tabPagePatient;
+            tabControlMain.SelectedTab = tabPage;
+
         }
 
         private void pictureBoxHome_Click(object sender, EventArgs e)
         {
             tabControlMain.TabPages.Remove(tabPageMonitor);
-            timer1.Start();
             Home();
         }
 
@@ -494,12 +507,82 @@ normal, stomach visible, bladder visible, hands both visible, feet both visible.
         private void pictureBoxGinaHome_Click_1(object sender, EventArgs e)
         {
             tabControlMain.TabPages.Remove(tabPageGina);
-            Home();
+            HomeWithTab(tabPageProvider);
         }
 
         private void pictureBoxGinaRefill_Click(object sender, EventArgs e)
         {
+            cmbMedications.SelectedItem = "Terbutaline";
+            cmbNumRefills.SelectedIndex = 0;
 
+            tabControlMain.TabPages.Remove(tabPageGina);
+            tabControlMain.TabPages.Add(tabPagePrescription);
+            tabControlMain.SelectedTab = tabPagePrescription;
+        }
+
+        private void pictureBoxPrescriptionHome_Click(object sender, EventArgs e)
+        {
+            tabControlMain.TabPages.Remove(tabPagePrescription);
+            tabControlMain.TabPages.Add(tabPageGina);
+            tabControlMain.SelectedTab = tabPageGina;
+            lblPrescriptionMessage.Visible = false;
+
+        }
+
+        private void btnSubmitRefill_Click(object sender, EventArgs e)
+        {
+            lblPrescriptionMessage.Visible = true;
+            richTextBoxMedicationList.Text += string.Format("\n({0}) - {1} - {2}", DateTime.Now.ToShortDateString(), cmbMedications.SelectedItem, txtDosage.Text);
+        }
+
+        private void pictureBoxGinaThreshold_Click(object sender, EventArgs e)
+        {
+            lblThresholdUpdateDate.Text = DateTime.Now.ToShortDateString();
+
+            tabControlMain.TabPages.Remove(tabPageGina);
+            tabControlMain.TabPages.Add(tabPageThreshold);
+            tabControlMain.SelectedTab = tabPageThreshold;
+
+        }
+
+        private void pictureBoxThresholdHome_Click(object sender, EventArgs e)
+        {
+            tabControlMain.TabPages.Remove(tabPageThreshold);
+            tabControlMain.TabPages.Add(tabPageGina);
+            tabControlMain.SelectedTab = tabPageGina;
+            lblThresholdSaved.Visible = false;
+
+        }
+
+        private void pictureBoxGinaAlert_Click(object sender, EventArgs e)
+        {
+            tabControlMain.TabPages.Remove(tabPageGina);
+            tabControlMain.TabPages.Add(tabPageProviderAlert);
+            tabControlMain.SelectedTab = tabPageProviderAlert;
+
+        }
+
+        private void pictureBoxProviderAlertHome_Click(object sender, EventArgs e)
+        {
+            tabControlMain.TabPages.Remove(tabPageProviderAlert);
+            tabControlMain.TabPages.Add(tabPageGina);
+            tabControlMain.SelectedTab = tabPageGina;
+            lblMessageSent.Visible = false;
+
+
+        }
+
+        private void btnSaveThreshold_Click(object sender, EventArgs e)
+        {
+            lblThresholdUpdateDate.Text = DateTime.Now.ToShortDateString();
+            lblThresholdSaved.Visible = true;
+        }
+
+        private void btnSendMessage_Click(object sender, EventArgs e)
+        {
+            providerMessage = richTextBoxMessageToPatient.Text;
+            lblMessageSent.Visible = true;
+            timer1.Start();
         }
     }
 }
