@@ -30,37 +30,55 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(iMOM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPagePatient = new System.Windows.Forms.TabPage();
+            this.pictureBoxReport = new System.Windows.Forms.PictureBox();
+            this.pictureBoxChat = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHealthResources = new System.Windows.Forms.PictureBox();
+            this.pictureBoxScheduler = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMonitor = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAlertDashboard = new System.Windows.Forms.PictureBox();
             this.buttonAlertDashboard = new System.Windows.Forms.Button();
+            this.pictureBox911 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxiMOMPlaceholder = new System.Windows.Forms.PictureBox();
             this.tabPageProvider = new System.Windows.Forms.TabPage();
             this.dataGridViewProviderPatientList = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PatName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBoxiMOMProviderPlaceholder = new System.Windows.Forms.PictureBox();
             this.tabPageMonitor = new System.Windows.Forms.TabPage();
+            this.pictureBoxStartCapture = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMonitorPlaceholder = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPairing = new System.Windows.Forms.PictureBox();
             this.richTextBoxMonitorAlert = new System.Windows.Forms.RichTextBox();
             this.textBoxMonitor = new System.Windows.Forms.TextBox();
             this.buttonStartCapture = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pictureBoxHome = new System.Windows.Forms.PictureBox();
             this.tabPageAlert = new System.Windows.Forms.TabPage();
             this.richTextBoxAlert = new System.Windows.Forms.RichTextBox();
             this.dataGridViewAlert = new System.Windows.Forms.DataGridView();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Action = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBoxHomeAlert = new System.Windows.Forms.PictureBox();
             this.tabPageScheduler = new System.Windows.Forms.TabPage();
             this.buttonToggleCalendarView = new System.Windows.Forms.Button();
             this.richTextBoxScheduler = new System.Windows.Forms.RichTextBox();
             this.calendarScheduler = new Calendar.NET.Calendar();
+            this.pictureBoxSchedulerHome = new System.Windows.Forms.PictureBox();
             this.tabPage911 = new System.Windows.Forms.TabPage();
+            this.pictureBoxCall911 = new System.Windows.Forms.PictureBox();
             this.dataGridView911 = new System.Windows.Forms.DataGridView();
             this.Tracker = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBox911 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox911Gif = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHome911 = new System.Windows.Forms.PictureBox();
             this.tabPageHealthResources = new System.Windows.Forms.TabPage();
             this.labelLoading = new System.Windows.Forms.Label();
             this.dataGridViewResource = new System.Windows.Forms.DataGridView();
@@ -68,11 +86,13 @@
             this.Resource = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBoxResource = new System.Windows.Forms.RichTextBox();
             this.webBrowserResource = new System.Windows.Forms.WebBrowser();
+            this.pictureBoxHomeResources = new System.Windows.Forms.PictureBox();
             this.tabPageProvideChat = new System.Windows.Forms.TabPage();
             this.richTextBoxChatResponse = new System.Windows.Forms.RichTextBox();
             this.richTextBoxProviderChat = new System.Windows.Forms.RichTextBox();
             this.buttonChatSubmit = new System.Windows.Forms.Button();
             this.richTextBoxTypeChat = new System.Windows.Forms.RichTextBox();
+            this.pictureBoxHomeChat = new System.Windows.Forms.PictureBox();
             this.tabPageReport = new System.Windows.Forms.TabPage();
             this.labelResult = new System.Windows.Forms.Label();
             this.dataGridViewReportResult = new System.Windows.Forms.DataGridView();
@@ -81,31 +101,8 @@
             this.Result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBoxReportResult = new System.Windows.Forms.RichTextBox();
             this.richTextBoxReport = new System.Windows.Forms.RichTextBox();
-            this.tabPageGina = new System.Windows.Forms.TabPage();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.timer911 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBoxReport = new System.Windows.Forms.PictureBox();
-            this.pictureBoxChat = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHealthResources = new System.Windows.Forms.PictureBox();
-            this.pictureBoxScheduler = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMonitor = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAlertDashboard = new System.Windows.Forms.PictureBox();
-            this.pictureBox911 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxiMOMPlaceholder = new System.Windows.Forms.PictureBox();
-            this.pictureBoxiMOMProviderPlaceholder = new System.Windows.Forms.PictureBox();
-            this.pictureBoxStartCapture = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMonitorPlaceholder = new System.Windows.Forms.PictureBox();
-            this.pictureBoxPairing = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHome = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHomeAlert = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSchedulerHome = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCall911 = new System.Windows.Forms.PictureBox();
-            this.pictureBox911Gif = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHome911 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHomeResources = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHomeChat = new System.Windows.Forms.PictureBox();
             this.pictureBoxReportHome = new System.Windows.Forms.PictureBox();
+            this.tabPageGina = new System.Windows.Forms.TabPage();
             this.pictureBoxGinaThreshold = new System.Windows.Forms.PictureBox();
             this.pictureBoxGinaRefill = new System.Windows.Forms.PictureBox();
             this.pictureBoxGinaAlert = new System.Windows.Forms.PictureBox();
@@ -167,23 +164,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBoxProviderAlertHome = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.timer911 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPagePatient.SuspendLayout();
-            this.tabPageProvider.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProviderPatientList)).BeginInit();
-            this.tabPageMonitor.SuspendLayout();
-            this.tabPageAlert.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlert)).BeginInit();
-            this.tabPageScheduler.SuspendLayout();
-            this.tabPage911.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView911)).BeginInit();
-            this.tabPageHealthResources.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResource)).BeginInit();
-            this.tabPageProvideChat.SuspendLayout();
-            this.tabPageReport.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReportResult)).BeginInit();
-            this.tabPageGina.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealthResources)).BeginInit();
@@ -192,19 +178,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlertDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox911)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxiMOMPlaceholder)).BeginInit();
+            this.tabPageProvider.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProviderPatientList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxiMOMProviderPlaceholder)).BeginInit();
+            this.tabPageMonitor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartCapture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonitorPlaceholder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPairing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHome)).BeginInit();
+            this.tabPageAlert.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeAlert)).BeginInit();
+            this.tabPageScheduler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSchedulerHome)).BeginInit();
+            this.tabPage911.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCall911)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView911)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox911Gif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHome911)).BeginInit();
+            this.tabPageHealthResources.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeResources)).BeginInit();
+            this.tabPageProvideChat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeChat)).BeginInit();
+            this.tabPageReport.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReportResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReportHome)).BeginInit();
+            this.tabPageGina.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaThreshold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaRefill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaAlert)).BeginInit();
@@ -275,6 +275,72 @@
             this.tabPagePatient.TabIndex = 0;
             this.tabPagePatient.Text = "Patient";
             // 
+            // pictureBoxReport
+            // 
+            this.pictureBoxReport.Image = global::iMOM.Properties.Resources.Report;
+            this.pictureBoxReport.Location = new System.Drawing.Point(19, 283);
+            this.pictureBoxReport.Name = "pictureBoxReport";
+            this.pictureBoxReport.Size = new System.Drawing.Size(100, 67);
+            this.pictureBoxReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxReport.TabIndex = 19;
+            this.pictureBoxReport.TabStop = false;
+            this.pictureBoxReport.Click += new System.EventHandler(this.pictureBoxReport_Click);
+            // 
+            // pictureBoxChat
+            // 
+            this.pictureBoxChat.Image = global::iMOM.Properties.Resources.Chat;
+            this.pictureBoxChat.Location = new System.Drawing.Point(251, 195);
+            this.pictureBoxChat.Name = "pictureBoxChat";
+            this.pictureBoxChat.Size = new System.Drawing.Size(94, 72);
+            this.pictureBoxChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxChat.TabIndex = 17;
+            this.pictureBoxChat.TabStop = false;
+            this.pictureBoxChat.Click += new System.EventHandler(this.pictureBoxChat_Click);
+            // 
+            // pictureBoxHealthResources
+            // 
+            this.pictureBoxHealthResources.Image = global::iMOM.Properties.Resources.HealthRes;
+            this.pictureBoxHealthResources.Location = new System.Drawing.Point(19, 192);
+            this.pictureBoxHealthResources.Name = "pictureBoxHealthResources";
+            this.pictureBoxHealthResources.Size = new System.Drawing.Size(94, 75);
+            this.pictureBoxHealthResources.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHealthResources.TabIndex = 16;
+            this.pictureBoxHealthResources.TabStop = false;
+            this.pictureBoxHealthResources.Click += new System.EventHandler(this.pictureBoxHealthResources_Click);
+            // 
+            // pictureBoxScheduler
+            // 
+            this.pictureBoxScheduler.Image = global::iMOM.Properties.Resources.Scheduler;
+            this.pictureBoxScheduler.Location = new System.Drawing.Point(251, 100);
+            this.pictureBoxScheduler.Name = "pictureBoxScheduler";
+            this.pictureBoxScheduler.Size = new System.Drawing.Size(94, 72);
+            this.pictureBoxScheduler.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxScheduler.TabIndex = 14;
+            this.pictureBoxScheduler.TabStop = false;
+            this.pictureBoxScheduler.Click += new System.EventHandler(this.pictureBoxScheduler_Click);
+            // 
+            // pictureBoxMonitor
+            // 
+            this.pictureBoxMonitor.Image = global::iMOM.Properties.Resources.ECG;
+            this.pictureBoxMonitor.Location = new System.Drawing.Point(19, 103);
+            this.pictureBoxMonitor.Name = "pictureBoxMonitor";
+            this.pictureBoxMonitor.Size = new System.Drawing.Size(94, 72);
+            this.pictureBoxMonitor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMonitor.TabIndex = 10;
+            this.pictureBoxMonitor.TabStop = false;
+            this.pictureBoxMonitor.Click += new System.EventHandler(this.pictureBoxMonitor_Click);
+            // 
+            // pictureBoxAlertDashboard
+            // 
+            this.pictureBoxAlertDashboard.Image = global::iMOM.Properties.Resources.Alert___Copy;
+            this.pictureBoxAlertDashboard.Location = new System.Drawing.Point(139, 103);
+            this.pictureBoxAlertDashboard.Name = "pictureBoxAlertDashboard";
+            this.pictureBoxAlertDashboard.Size = new System.Drawing.Size(91, 62);
+            this.pictureBoxAlertDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxAlertDashboard.TabIndex = 12;
+            this.pictureBoxAlertDashboard.TabStop = false;
+            this.pictureBoxAlertDashboard.Click += new System.EventHandler(this.pictureBoxAlertDashboard_Click);
+            // 
             // buttonAlertDashboard
             // 
             this.buttonAlertDashboard.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -287,6 +353,29 @@
             this.buttonAlertDashboard.Text = "Alert Dashboard";
             this.buttonAlertDashboard.UseVisualStyleBackColor = false;
             this.buttonAlertDashboard.Click += new System.EventHandler(this.buttonAlertDashboard_Click);
+            // 
+            // pictureBox911
+            // 
+            this.pictureBox911.Image = global::iMOM.Properties.Resources._911;
+            this.pictureBox911.Location = new System.Drawing.Point(133, 195);
+            this.pictureBox911.Name = "pictureBox911";
+            this.pictureBox911.Size = new System.Drawing.Size(94, 72);
+            this.pictureBox911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox911.TabIndex = 15;
+            this.pictureBox911.TabStop = false;
+            this.pictureBox911.Click += new System.EventHandler(this.pictureBox911_Click);
+            // 
+            // pictureBoxiMOMPlaceholder
+            // 
+            this.pictureBoxiMOMPlaceholder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxiMOMPlaceholder.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxiMOMPlaceholder.Image = global::iMOM.Properties.Resources.BackgroundWithiMomContacts;
+            this.pictureBoxiMOMPlaceholder.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxiMOMPlaceholder.Name = "pictureBoxiMOMPlaceholder";
+            this.pictureBoxiMOMPlaceholder.Size = new System.Drawing.Size(360, 615);
+            this.pictureBoxiMOMPlaceholder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxiMOMPlaceholder.TabIndex = 13;
+            this.pictureBoxiMOMPlaceholder.TabStop = false;
             // 
             // tabPageProvider
             // 
@@ -338,6 +427,16 @@
             this.DOB.Name = "DOB";
             this.DOB.ReadOnly = true;
             // 
+            // pictureBoxiMOMProviderPlaceholder
+            // 
+            this.pictureBoxiMOMProviderPlaceholder.Image = global::iMOM.Properties.Resources.BackgroundProvider;
+            this.pictureBoxiMOMProviderPlaceholder.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxiMOMProviderPlaceholder.Name = "pictureBoxiMOMProviderPlaceholder";
+            this.pictureBoxiMOMProviderPlaceholder.Size = new System.Drawing.Size(360, 612);
+            this.pictureBoxiMOMProviderPlaceholder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxiMOMProviderPlaceholder.TabIndex = 0;
+            this.pictureBoxiMOMProviderPlaceholder.TabStop = false;
+            // 
             // tabPageMonitor
             // 
             this.tabPageMonitor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -356,6 +455,37 @@
             this.tabPageMonitor.TabIndex = 2;
             this.tabPageMonitor.Text = "Monitor";
             // 
+            // pictureBoxStartCapture
+            // 
+            this.pictureBoxStartCapture.Image = global::iMOM.Properties.Resources.Capture1;
+            this.pictureBoxStartCapture.Location = new System.Drawing.Point(284, 169);
+            this.pictureBoxStartCapture.Name = "pictureBoxStartCapture";
+            this.pictureBoxStartCapture.Size = new System.Drawing.Size(74, 71);
+            this.pictureBoxStartCapture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxStartCapture.TabIndex = 12;
+            this.pictureBoxStartCapture.TabStop = false;
+            this.pictureBoxStartCapture.Click += new System.EventHandler(this.pictureBoxStartCapture_Click);
+            // 
+            // pictureBoxMonitorPlaceholder
+            // 
+            this.pictureBoxMonitorPlaceholder.Image = global::iMOM.Properties.Resources.Monitor;
+            this.pictureBoxMonitorPlaceholder.Location = new System.Drawing.Point(-3, 406);
+            this.pictureBoxMonitorPlaceholder.Name = "pictureBoxMonitorPlaceholder";
+            this.pictureBoxMonitorPlaceholder.Size = new System.Drawing.Size(370, 215);
+            this.pictureBoxMonitorPlaceholder.TabIndex = 11;
+            this.pictureBoxMonitorPlaceholder.TabStop = false;
+            // 
+            // pictureBoxPairing
+            // 
+            this.pictureBoxPairing.Image = global::iMOM.Properties.Resources.BlueToothPairing;
+            this.pictureBoxPairing.Location = new System.Drawing.Point(190, 169);
+            this.pictureBoxPairing.Name = "pictureBoxPairing";
+            this.pictureBoxPairing.Size = new System.Drawing.Size(78, 71);
+            this.pictureBoxPairing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPairing.TabIndex = 10;
+            this.pictureBoxPairing.TabStop = false;
+            this.pictureBoxPairing.Click += new System.EventHandler(this.pictureBoxPairing_Click);
+            // 
             // richTextBoxMonitorAlert
             // 
             this.richTextBoxMonitorAlert.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -372,6 +502,7 @@
             this.textBoxMonitor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxMonitor.Enabled = false;
             this.textBoxMonitor.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMonitor.ForeColor = System.Drawing.Color.Black;
             this.textBoxMonitor.Location = new System.Drawing.Point(0, 3);
             this.textBoxMonitor.Multiline = true;
             this.textBoxMonitor.Name = "textBoxMonitor";
@@ -396,6 +527,17 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(366, 70);
             this.progressBar1.TabIndex = 4;
+            // 
+            // pictureBoxHome
+            // 
+            this.pictureBoxHome.Image = global::iMOM.Properties.Resources.homeblue;
+            this.pictureBoxHome.Location = new System.Drawing.Point(275, 6);
+            this.pictureBoxHome.Name = "pictureBoxHome";
+            this.pictureBoxHome.Size = new System.Drawing.Size(85, 79);
+            this.pictureBoxHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHome.TabIndex = 8;
+            this.pictureBoxHome.TabStop = false;
+            this.pictureBoxHome.Click += new System.EventHandler(this.pictureBoxHome_Click);
             // 
             // tabPageAlert
             // 
@@ -464,6 +606,17 @@
             this.Message.Name = "Message";
             this.Message.ReadOnly = true;
             // 
+            // pictureBoxHomeAlert
+            // 
+            this.pictureBoxHomeAlert.Image = global::iMOM.Properties.Resources.homeblue;
+            this.pictureBoxHomeAlert.Location = new System.Drawing.Point(278, 0);
+            this.pictureBoxHomeAlert.Name = "pictureBoxHomeAlert";
+            this.pictureBoxHomeAlert.Size = new System.Drawing.Size(85, 79);
+            this.pictureBoxHomeAlert.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHomeAlert.TabIndex = 9;
+            this.pictureBoxHomeAlert.TabStop = false;
+            this.pictureBoxHomeAlert.Click += new System.EventHandler(this.pictureBoxHomeAlert_Click);
+            // 
             // tabPageScheduler
             // 
             this.tabPageScheduler.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -523,6 +676,17 @@
             this.calendarScheduler.TabIndex = 2;
             this.calendarScheduler.TodayFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             // 
+            // pictureBoxSchedulerHome
+            // 
+            this.pictureBoxSchedulerHome.Image = global::iMOM.Properties.Resources.homeblue;
+            this.pictureBoxSchedulerHome.Location = new System.Drawing.Point(280, 0);
+            this.pictureBoxSchedulerHome.Name = "pictureBoxSchedulerHome";
+            this.pictureBoxSchedulerHome.Size = new System.Drawing.Size(85, 79);
+            this.pictureBoxSchedulerHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSchedulerHome.TabIndex = 10;
+            this.pictureBoxSchedulerHome.TabStop = false;
+            this.pictureBoxSchedulerHome.Click += new System.EventHandler(this.pictureBoxSchedulerHome_Click);
+            // 
             // tabPage911
             // 
             this.tabPage911.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -536,6 +700,17 @@
             this.tabPage911.Size = new System.Drawing.Size(366, 621);
             this.tabPage911.TabIndex = 5;
             this.tabPage911.Text = "911";
+            // 
+            // pictureBoxCall911
+            // 
+            this.pictureBoxCall911.Image = global::iMOM.Properties.Resources.Call911;
+            this.pictureBoxCall911.Location = new System.Drawing.Point(277, 77);
+            this.pictureBoxCall911.Name = "pictureBoxCall911";
+            this.pictureBoxCall911.Size = new System.Drawing.Size(86, 66);
+            this.pictureBoxCall911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCall911.TabIndex = 15;
+            this.pictureBoxCall911.TabStop = false;
+            this.pictureBoxCall911.Click += new System.EventHandler(this.pictureBoxCall911_Click);
             // 
             // dataGridView911
             // 
@@ -564,6 +739,28 @@
             this.richTextBox911.Size = new System.Drawing.Size(270, 150);
             this.richTextBox911.TabIndex = 12;
             this.richTextBox911.Text = resources.GetString("richTextBox911.Text");
+            // 
+            // pictureBox911Gif
+            // 
+            this.pictureBox911Gif.Image = global::iMOM.Properties.Resources.giphy;
+            this.pictureBox911Gif.Location = new System.Drawing.Point(0, 441);
+            this.pictureBox911Gif.Name = "pictureBox911Gif";
+            this.pictureBox911Gif.Size = new System.Drawing.Size(370, 177);
+            this.pictureBox911Gif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox911Gif.TabIndex = 13;
+            this.pictureBox911Gif.TabStop = false;
+            this.pictureBox911Gif.Visible = false;
+            // 
+            // pictureBoxHome911
+            // 
+            this.pictureBoxHome911.Image = global::iMOM.Properties.Resources.homeblue;
+            this.pictureBoxHome911.Location = new System.Drawing.Point(277, 0);
+            this.pictureBoxHome911.Name = "pictureBoxHome911";
+            this.pictureBoxHome911.Size = new System.Drawing.Size(85, 75);
+            this.pictureBoxHome911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHome911.TabIndex = 11;
+            this.pictureBoxHome911.TabStop = false;
+            this.pictureBoxHome911.Click += new System.EventHandler(this.pictureBoxHome911_Click);
             // 
             // tabPageHealthResources
             // 
@@ -599,13 +796,13 @@
             this.dataGridViewResource.Location = new System.Drawing.Point(0, 112);
             this.dataGridViewResource.MultiSelect = false;
             this.dataGridViewResource.Name = "dataGridViewResource";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridViewResource.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridViewResource.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewResource.RowHeadersVisible = false;
             this.dataGridViewResource.RowTemplate.Height = 24;
             this.dataGridViewResource.RowTemplate.ReadOnly = true;
@@ -627,8 +824,8 @@
             // Resource
             // 
             this.Resource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Resource.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Resource.DefaultCellStyle = dataGridViewCellStyle1;
             this.Resource.FillWeight = 149.2386F;
             this.Resource.HeaderText = "Link";
             this.Resource.Name = "Resource";
@@ -653,6 +850,17 @@
             this.webBrowserResource.ScriptErrorsSuppressed = true;
             this.webBrowserResource.Size = new System.Drawing.Size(343, 282);
             this.webBrowserResource.TabIndex = 13;
+            // 
+            // pictureBoxHomeResources
+            // 
+            this.pictureBoxHomeResources.Image = global::iMOM.Properties.Resources.homeblue;
+            this.pictureBoxHomeResources.Location = new System.Drawing.Point(276, 3);
+            this.pictureBoxHomeResources.Name = "pictureBoxHomeResources";
+            this.pictureBoxHomeResources.Size = new System.Drawing.Size(85, 79);
+            this.pictureBoxHomeResources.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHomeResources.TabIndex = 12;
+            this.pictureBoxHomeResources.TabStop = false;
+            this.pictureBoxHomeResources.Click += new System.EventHandler(this.pictureBoxHomeResources_Click);
             // 
             // tabPageProvideChat
             // 
@@ -707,6 +915,17 @@
             this.richTextBoxTypeChat.Text = "";
             this.richTextBoxTypeChat.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.richTextBoxTypeChat_PreviewKeyDown);
             // 
+            // pictureBoxHomeChat
+            // 
+            this.pictureBoxHomeChat.Image = global::iMOM.Properties.Resources.homeblue;
+            this.pictureBoxHomeChat.Location = new System.Drawing.Point(278, 3);
+            this.pictureBoxHomeChat.Name = "pictureBoxHomeChat";
+            this.pictureBoxHomeChat.Size = new System.Drawing.Size(85, 79);
+            this.pictureBoxHomeChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHomeChat.TabIndex = 13;
+            this.pictureBoxHomeChat.TabStop = false;
+            this.pictureBoxHomeChat.Click += new System.EventHandler(this.pictureBoxHomeChat_Click);
+            // 
             // tabPageReport
             // 
             this.tabPageReport.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -741,8 +960,8 @@
             this.dataGridViewReportResult.Location = new System.Drawing.Point(0, 118);
             this.dataGridViewReportResult.Name = "dataGridViewReportResult";
             this.dataGridViewReportResult.RowHeadersVisible = false;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewReportResult.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewReportResult.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewReportResult.RowTemplate.Height = 24;
             this.dataGridViewReportResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewReportResult.Size = new System.Drawing.Size(366, 229);
@@ -788,6 +1007,17 @@
             this.richTextBoxReport.TabIndex = 3;
             this.richTextBoxReport.Text = "Results of the tests/ examinations taken.\n\nSelect a report to view the details:";
             // 
+            // pictureBoxReportHome
+            // 
+            this.pictureBoxReportHome.Image = global::iMOM.Properties.Resources.homeblue;
+            this.pictureBoxReportHome.Location = new System.Drawing.Point(278, 3);
+            this.pictureBoxReportHome.Name = "pictureBoxReportHome";
+            this.pictureBoxReportHome.Size = new System.Drawing.Size(85, 79);
+            this.pictureBoxReportHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxReportHome.TabIndex = 14;
+            this.pictureBoxReportHome.TabStop = false;
+            this.pictureBoxReportHome.Click += new System.EventHandler(this.pictureBoxReportHome_Click);
+            // 
             // tabPageGina
             // 
             this.tabPageGina.Controls.Add(this.pictureBoxGinaThreshold);
@@ -801,251 +1031,6 @@
             this.tabPageGina.TabIndex = 9;
             this.tabPageGina.Text = "Patient";
             this.tabPageGina.UseVisualStyleBackColor = true;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            // 
-            // timer911
-            // 
-            this.timer911.Enabled = true;
-            this.timer911.Interval = 1000;
-            this.timer911.Tick += new System.EventHandler(this.timer911_Tick);
-            // 
-            // pictureBoxReport
-            // 
-            this.pictureBoxReport.Image = global::iMOM.Properties.Resources.Report;
-            this.pictureBoxReport.Location = new System.Drawing.Point(19, 283);
-            this.pictureBoxReport.Name = "pictureBoxReport";
-            this.pictureBoxReport.Size = new System.Drawing.Size(100, 67);
-            this.pictureBoxReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxReport.TabIndex = 19;
-            this.pictureBoxReport.TabStop = false;
-            this.pictureBoxReport.Click += new System.EventHandler(this.pictureBoxReport_Click);
-            // 
-            // pictureBoxChat
-            // 
-            this.pictureBoxChat.Image = global::iMOM.Properties.Resources.Chat;
-            this.pictureBoxChat.Location = new System.Drawing.Point(251, 195);
-            this.pictureBoxChat.Name = "pictureBoxChat";
-            this.pictureBoxChat.Size = new System.Drawing.Size(94, 72);
-            this.pictureBoxChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxChat.TabIndex = 17;
-            this.pictureBoxChat.TabStop = false;
-            this.pictureBoxChat.Click += new System.EventHandler(this.pictureBoxChat_Click);
-            // 
-            // pictureBoxHealthResources
-            // 
-            this.pictureBoxHealthResources.Image = global::iMOM.Properties.Resources.HealthRes;
-            this.pictureBoxHealthResources.Location = new System.Drawing.Point(19, 192);
-            this.pictureBoxHealthResources.Name = "pictureBoxHealthResources";
-            this.pictureBoxHealthResources.Size = new System.Drawing.Size(94, 75);
-            this.pictureBoxHealthResources.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxHealthResources.TabIndex = 16;
-            this.pictureBoxHealthResources.TabStop = false;
-            this.pictureBoxHealthResources.Click += new System.EventHandler(this.pictureBoxHealthResources_Click);
-            // 
-            // pictureBoxScheduler
-            // 
-            this.pictureBoxScheduler.Image = global::iMOM.Properties.Resources.Scheduler;
-            this.pictureBoxScheduler.Location = new System.Drawing.Point(251, 100);
-            this.pictureBoxScheduler.Name = "pictureBoxScheduler";
-            this.pictureBoxScheduler.Size = new System.Drawing.Size(94, 72);
-            this.pictureBoxScheduler.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxScheduler.TabIndex = 14;
-            this.pictureBoxScheduler.TabStop = false;
-            this.pictureBoxScheduler.Click += new System.EventHandler(this.pictureBoxScheduler_Click);
-            // 
-            // pictureBoxMonitor
-            // 
-            this.pictureBoxMonitor.Image = global::iMOM.Properties.Resources.ECG;
-            this.pictureBoxMonitor.Location = new System.Drawing.Point(19, 103);
-            this.pictureBoxMonitor.Name = "pictureBoxMonitor";
-            this.pictureBoxMonitor.Size = new System.Drawing.Size(94, 72);
-            this.pictureBoxMonitor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMonitor.TabIndex = 10;
-            this.pictureBoxMonitor.TabStop = false;
-            this.pictureBoxMonitor.Click += new System.EventHandler(this.pictureBoxMonitor_Click);
-            // 
-            // pictureBoxAlertDashboard
-            // 
-            this.pictureBoxAlertDashboard.Image = global::iMOM.Properties.Resources.Alert___Copy;
-            this.pictureBoxAlertDashboard.Location = new System.Drawing.Point(139, 103);
-            this.pictureBoxAlertDashboard.Name = "pictureBoxAlertDashboard";
-            this.pictureBoxAlertDashboard.Size = new System.Drawing.Size(91, 62);
-            this.pictureBoxAlertDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxAlertDashboard.TabIndex = 12;
-            this.pictureBoxAlertDashboard.TabStop = false;
-            this.pictureBoxAlertDashboard.Click += new System.EventHandler(this.pictureBoxAlertDashboard_Click);
-            // 
-            // pictureBox911
-            // 
-            this.pictureBox911.Image = global::iMOM.Properties.Resources._911;
-            this.pictureBox911.Location = new System.Drawing.Point(133, 195);
-            this.pictureBox911.Name = "pictureBox911";
-            this.pictureBox911.Size = new System.Drawing.Size(94, 72);
-            this.pictureBox911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox911.TabIndex = 15;
-            this.pictureBox911.TabStop = false;
-            this.pictureBox911.Click += new System.EventHandler(this.pictureBox911_Click);
-            // 
-            // pictureBoxiMOMPlaceholder
-            // 
-            this.pictureBoxiMOMPlaceholder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBoxiMOMPlaceholder.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxiMOMPlaceholder.Image = global::iMOM.Properties.Resources.BackgroundWithiMomContacts;
-            this.pictureBoxiMOMPlaceholder.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxiMOMPlaceholder.Name = "pictureBoxiMOMPlaceholder";
-            this.pictureBoxiMOMPlaceholder.Size = new System.Drawing.Size(360, 615);
-            this.pictureBoxiMOMPlaceholder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxiMOMPlaceholder.TabIndex = 13;
-            this.pictureBoxiMOMPlaceholder.TabStop = false;
-            // 
-            // pictureBoxiMOMProviderPlaceholder
-            // 
-            this.pictureBoxiMOMProviderPlaceholder.Image = global::iMOM.Properties.Resources.BackgroundProvider;
-            this.pictureBoxiMOMProviderPlaceholder.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxiMOMProviderPlaceholder.Name = "pictureBoxiMOMProviderPlaceholder";
-            this.pictureBoxiMOMProviderPlaceholder.Size = new System.Drawing.Size(360, 612);
-            this.pictureBoxiMOMProviderPlaceholder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxiMOMProviderPlaceholder.TabIndex = 0;
-            this.pictureBoxiMOMProviderPlaceholder.TabStop = false;
-            // 
-            // pictureBoxStartCapture
-            // 
-            this.pictureBoxStartCapture.Image = global::iMOM.Properties.Resources.Capture1;
-            this.pictureBoxStartCapture.Location = new System.Drawing.Point(284, 169);
-            this.pictureBoxStartCapture.Name = "pictureBoxStartCapture";
-            this.pictureBoxStartCapture.Size = new System.Drawing.Size(74, 71);
-            this.pictureBoxStartCapture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxStartCapture.TabIndex = 12;
-            this.pictureBoxStartCapture.TabStop = false;
-            this.pictureBoxStartCapture.Click += new System.EventHandler(this.pictureBoxStartCapture_Click);
-            // 
-            // pictureBoxMonitorPlaceholder
-            // 
-            this.pictureBoxMonitorPlaceholder.Image = global::iMOM.Properties.Resources.Monitor;
-            this.pictureBoxMonitorPlaceholder.Location = new System.Drawing.Point(-3, 406);
-            this.pictureBoxMonitorPlaceholder.Name = "pictureBoxMonitorPlaceholder";
-            this.pictureBoxMonitorPlaceholder.Size = new System.Drawing.Size(370, 215);
-            this.pictureBoxMonitorPlaceholder.TabIndex = 11;
-            this.pictureBoxMonitorPlaceholder.TabStop = false;
-            // 
-            // pictureBoxPairing
-            // 
-            this.pictureBoxPairing.Image = global::iMOM.Properties.Resources.BlueToothPairing;
-            this.pictureBoxPairing.Location = new System.Drawing.Point(190, 169);
-            this.pictureBoxPairing.Name = "pictureBoxPairing";
-            this.pictureBoxPairing.Size = new System.Drawing.Size(78, 71);
-            this.pictureBoxPairing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxPairing.TabIndex = 10;
-            this.pictureBoxPairing.TabStop = false;
-            this.pictureBoxPairing.Click += new System.EventHandler(this.pictureBoxPairing_Click);
-            // 
-            // pictureBoxHome
-            // 
-            this.pictureBoxHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHome.Location = new System.Drawing.Point(275, 6);
-            this.pictureBoxHome.Name = "pictureBoxHome";
-            this.pictureBoxHome.Size = new System.Drawing.Size(85, 79);
-            this.pictureBoxHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxHome.TabIndex = 8;
-            this.pictureBoxHome.TabStop = false;
-            this.pictureBoxHome.Click += new System.EventHandler(this.pictureBoxHome_Click);
-            // 
-            // pictureBoxHomeAlert
-            // 
-            this.pictureBoxHomeAlert.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHomeAlert.Location = new System.Drawing.Point(278, 0);
-            this.pictureBoxHomeAlert.Name = "pictureBoxHomeAlert";
-            this.pictureBoxHomeAlert.Size = new System.Drawing.Size(85, 79);
-            this.pictureBoxHomeAlert.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxHomeAlert.TabIndex = 9;
-            this.pictureBoxHomeAlert.TabStop = false;
-            this.pictureBoxHomeAlert.Click += new System.EventHandler(this.pictureBoxHomeAlert_Click);
-            // 
-            // pictureBoxSchedulerHome
-            // 
-            this.pictureBoxSchedulerHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxSchedulerHome.Location = new System.Drawing.Point(280, 0);
-            this.pictureBoxSchedulerHome.Name = "pictureBoxSchedulerHome";
-            this.pictureBoxSchedulerHome.Size = new System.Drawing.Size(85, 79);
-            this.pictureBoxSchedulerHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSchedulerHome.TabIndex = 10;
-            this.pictureBoxSchedulerHome.TabStop = false;
-            this.pictureBoxSchedulerHome.Click += new System.EventHandler(this.pictureBoxSchedulerHome_Click);
-            // 
-            // pictureBoxCall911
-            // 
-            this.pictureBoxCall911.Image = global::iMOM.Properties.Resources.Call911;
-            this.pictureBoxCall911.Location = new System.Drawing.Point(277, 77);
-            this.pictureBoxCall911.Name = "pictureBoxCall911";
-            this.pictureBoxCall911.Size = new System.Drawing.Size(86, 66);
-            this.pictureBoxCall911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxCall911.TabIndex = 15;
-            this.pictureBoxCall911.TabStop = false;
-            this.pictureBoxCall911.Click += new System.EventHandler(this.pictureBoxCall911_Click);
-            // 
-            // pictureBox911Gif
-            // 
-            this.pictureBox911Gif.Image = global::iMOM.Properties.Resources.giphy;
-            this.pictureBox911Gif.Location = new System.Drawing.Point(0, 441);
-            this.pictureBox911Gif.Name = "pictureBox911Gif";
-            this.pictureBox911Gif.Size = new System.Drawing.Size(370, 177);
-            this.pictureBox911Gif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox911Gif.TabIndex = 13;
-            this.pictureBox911Gif.TabStop = false;
-            this.pictureBox911Gif.Visible = false;
-            // 
-            // pictureBoxHome911
-            // 
-            this.pictureBoxHome911.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHome911.Location = new System.Drawing.Point(277, 0);
-            this.pictureBoxHome911.Name = "pictureBoxHome911";
-            this.pictureBoxHome911.Size = new System.Drawing.Size(85, 75);
-            this.pictureBoxHome911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxHome911.TabIndex = 11;
-            this.pictureBoxHome911.TabStop = false;
-            this.pictureBoxHome911.Click += new System.EventHandler(this.pictureBoxHome911_Click);
-            // 
-            // pictureBoxHomeResources
-            // 
-            this.pictureBoxHomeResources.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHomeResources.Location = new System.Drawing.Point(276, 3);
-            this.pictureBoxHomeResources.Name = "pictureBoxHomeResources";
-            this.pictureBoxHomeResources.Size = new System.Drawing.Size(85, 79);
-            this.pictureBoxHomeResources.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxHomeResources.TabIndex = 12;
-            this.pictureBoxHomeResources.TabStop = false;
-            this.pictureBoxHomeResources.Click += new System.EventHandler(this.pictureBoxHomeResources_Click);
-            // 
-            // pictureBoxHomeChat
-            // 
-            this.pictureBoxHomeChat.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHomeChat.Location = new System.Drawing.Point(278, 3);
-            this.pictureBoxHomeChat.Name = "pictureBoxHomeChat";
-            this.pictureBoxHomeChat.Size = new System.Drawing.Size(85, 79);
-            this.pictureBoxHomeChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxHomeChat.TabIndex = 13;
-            this.pictureBoxHomeChat.TabStop = false;
-            this.pictureBoxHomeChat.Click += new System.EventHandler(this.pictureBoxHomeChat_Click);
-            // 
-            // pictureBoxReportHome
-            // 
-            this.pictureBoxReportHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxReportHome.Location = new System.Drawing.Point(278, 3);
-            this.pictureBoxReportHome.Name = "pictureBoxReportHome";
-            this.pictureBoxReportHome.Size = new System.Drawing.Size(85, 79);
-            this.pictureBoxReportHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxReportHome.TabIndex = 14;
-            this.pictureBoxReportHome.TabStop = false;
-            this.pictureBoxReportHome.Click += new System.EventHandler(this.pictureBoxReportHome_Click);
             // 
             // pictureBoxGinaThreshold
             // 
@@ -1714,6 +1699,22 @@
             this.pictureBoxProviderAlertHome.TabStop = false;
             this.pictureBoxProviderAlertHome.Click += new System.EventHandler(this.pictureBoxProviderAlertHome_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // timer911
+            // 
+            this.timer911.Enabled = true;
+            this.timer911.Interval = 1000;
+            this.timer911.Tick += new System.EventHandler(this.timer911_Tick);
+            // 
             // iMOM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -1730,23 +1731,6 @@
             this.panel1.ResumeLayout(false);
             this.tabControlMain.ResumeLayout(false);
             this.tabPagePatient.ResumeLayout(false);
-            this.tabPageProvider.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProviderPatientList)).EndInit();
-            this.tabPageMonitor.ResumeLayout(false);
-            this.tabPageMonitor.PerformLayout();
-            this.tabPageAlert.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlert)).EndInit();
-            this.tabPageScheduler.ResumeLayout(false);
-            this.tabPage911.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView911)).EndInit();
-            this.tabPageHealthResources.ResumeLayout(false);
-            this.tabPageHealthResources.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResource)).EndInit();
-            this.tabPageProvideChat.ResumeLayout(false);
-            this.tabPageReport.ResumeLayout(false);
-            this.tabPageReport.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReportResult)).EndInit();
-            this.tabPageGina.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealthResources)).EndInit();
@@ -1755,19 +1739,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlertDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox911)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxiMOMPlaceholder)).EndInit();
+            this.tabPageProvider.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProviderPatientList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxiMOMProviderPlaceholder)).EndInit();
+            this.tabPageMonitor.ResumeLayout(false);
+            this.tabPageMonitor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartCapture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonitorPlaceholder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPairing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHome)).EndInit();
+            this.tabPageAlert.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeAlert)).EndInit();
+            this.tabPageScheduler.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSchedulerHome)).EndInit();
+            this.tabPage911.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCall911)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView911)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox911Gif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHome911)).EndInit();
+            this.tabPageHealthResources.ResumeLayout(false);
+            this.tabPageHealthResources.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeResources)).EndInit();
+            this.tabPageProvideChat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeChat)).EndInit();
+            this.tabPageReport.ResumeLayout(false);
+            this.tabPageReport.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReportResult)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReportHome)).EndInit();
+            this.tabPageGina.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaThreshold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaRefill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaAlert)).EndInit();
