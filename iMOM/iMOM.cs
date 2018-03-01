@@ -492,7 +492,7 @@ normal, stomach visible, bladder visible, hands both visible, feet both visible.
                 dataGridViewProviderPatientList.Columns[0].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
                 dataGridViewProviderPatientList.Columns[1].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
 
-                dataGridViewProviderPatientList.Rows.Add("W12345", "Gina Gervae", "3/11/1985");
+                dataGridViewProviderPatientList.Rows.Add("W12345", "Gina Gardoni", "3/11/1987");
             }
         }
 

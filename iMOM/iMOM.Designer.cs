@@ -30,55 +30,37 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(iMOM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPagePatient = new System.Windows.Forms.TabPage();
-            this.pictureBoxReport = new System.Windows.Forms.PictureBox();
-            this.pictureBoxChat = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHealthResources = new System.Windows.Forms.PictureBox();
-            this.pictureBoxScheduler = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMonitor = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAlertDashboard = new System.Windows.Forms.PictureBox();
             this.buttonAlertDashboard = new System.Windows.Forms.Button();
-            this.pictureBox911 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxiMOMPlaceholder = new System.Windows.Forms.PictureBox();
             this.tabPageProvider = new System.Windows.Forms.TabPage();
             this.dataGridViewProviderPatientList = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PatName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBoxiMOMProviderPlaceholder = new System.Windows.Forms.PictureBox();
             this.tabPageMonitor = new System.Windows.Forms.TabPage();
-            this.pictureBoxStartCapture = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMonitorPlaceholder = new System.Windows.Forms.PictureBox();
-            this.pictureBoxPairing = new System.Windows.Forms.PictureBox();
             this.richTextBoxMonitorAlert = new System.Windows.Forms.RichTextBox();
             this.textBoxMonitor = new System.Windows.Forms.TextBox();
             this.buttonStartCapture = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.pictureBoxHome = new System.Windows.Forms.PictureBox();
             this.tabPageAlert = new System.Windows.Forms.TabPage();
             this.richTextBoxAlert = new System.Windows.Forms.RichTextBox();
             this.dataGridViewAlert = new System.Windows.Forms.DataGridView();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Action = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBoxHomeAlert = new System.Windows.Forms.PictureBox();
             this.tabPageScheduler = new System.Windows.Forms.TabPage();
             this.buttonToggleCalendarView = new System.Windows.Forms.Button();
             this.richTextBoxScheduler = new System.Windows.Forms.RichTextBox();
             this.calendarScheduler = new Calendar.NET.Calendar();
-            this.pictureBoxSchedulerHome = new System.Windows.Forms.PictureBox();
             this.tabPage911 = new System.Windows.Forms.TabPage();
-            this.pictureBoxCall911 = new System.Windows.Forms.PictureBox();
             this.dataGridView911 = new System.Windows.Forms.DataGridView();
             this.Tracker = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBox911 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox911Gif = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHome911 = new System.Windows.Forms.PictureBox();
             this.tabPageHealthResources = new System.Windows.Forms.TabPage();
             this.labelLoading = new System.Windows.Forms.Label();
             this.dataGridViewResource = new System.Windows.Forms.DataGridView();
@@ -86,13 +68,11 @@
             this.Resource = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBoxResource = new System.Windows.Forms.RichTextBox();
             this.webBrowserResource = new System.Windows.Forms.WebBrowser();
-            this.pictureBoxHomeResources = new System.Windows.Forms.PictureBox();
             this.tabPageProvideChat = new System.Windows.Forms.TabPage();
             this.richTextBoxChatResponse = new System.Windows.Forms.RichTextBox();
             this.richTextBoxProviderChat = new System.Windows.Forms.RichTextBox();
             this.buttonChatSubmit = new System.Windows.Forms.Button();
             this.richTextBoxTypeChat = new System.Windows.Forms.RichTextBox();
-            this.pictureBoxHomeChat = new System.Windows.Forms.PictureBox();
             this.tabPageReport = new System.Windows.Forms.TabPage();
             this.labelResult = new System.Windows.Forms.Label();
             this.dataGridViewReportResult = new System.Windows.Forms.DataGridView();
@@ -101,8 +81,31 @@
             this.Result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBoxReportResult = new System.Windows.Forms.RichTextBox();
             this.richTextBoxReport = new System.Windows.Forms.RichTextBox();
-            this.pictureBoxReportHome = new System.Windows.Forms.PictureBox();
             this.tabPageGina = new System.Windows.Forms.TabPage();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.timer911 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxReport = new System.Windows.Forms.PictureBox();
+            this.pictureBoxChat = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHealthResources = new System.Windows.Forms.PictureBox();
+            this.pictureBoxScheduler = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMonitor = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAlertDashboard = new System.Windows.Forms.PictureBox();
+            this.pictureBox911 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxiMOMPlaceholder = new System.Windows.Forms.PictureBox();
+            this.pictureBoxiMOMProviderPlaceholder = new System.Windows.Forms.PictureBox();
+            this.pictureBoxStartCapture = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMonitorPlaceholder = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPairing = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHome = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHomeAlert = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSchedulerHome = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCall911 = new System.Windows.Forms.PictureBox();
+            this.pictureBox911Gif = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHome911 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHomeResources = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHomeChat = new System.Windows.Forms.PictureBox();
+            this.pictureBoxReportHome = new System.Windows.Forms.PictureBox();
             this.pictureBoxGinaThreshold = new System.Windows.Forms.PictureBox();
             this.pictureBoxGinaRefill = new System.Windows.Forms.PictureBox();
             this.pictureBoxGinaAlert = new System.Windows.Forms.PictureBox();
@@ -130,6 +133,7 @@
             this.cmbMedications = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageThreshold = new System.Windows.Forms.TabPage();
+            this.lblThresholdSaved = new System.Windows.Forms.Label();
             this.btnSaveThreshold = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -151,6 +155,7 @@
             this.pictureBoxThresholdHome = new System.Windows.Forms.PictureBox();
             this.tabPageProviderAlert = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblMessageSent = new System.Windows.Forms.Label();
             this.btnSendMessage = new System.Windows.Forms.Button();
             this.richTextBoxMessageToPatient = new System.Windows.Forms.RichTextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -162,14 +167,23 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBoxProviderAlertHome = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.timer911 = new System.Windows.Forms.Timer(this.components);
-            this.lblMessageSent = new System.Windows.Forms.Label();
-            this.lblThresholdSaved = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPagePatient.SuspendLayout();
+            this.tabPageProvider.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProviderPatientList)).BeginInit();
+            this.tabPageMonitor.SuspendLayout();
+            this.tabPageAlert.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlert)).BeginInit();
+            this.tabPageScheduler.SuspendLayout();
+            this.tabPage911.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView911)).BeginInit();
+            this.tabPageHealthResources.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResource)).BeginInit();
+            this.tabPageProvideChat.SuspendLayout();
+            this.tabPageReport.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReportResult)).BeginInit();
+            this.tabPageGina.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealthResources)).BeginInit();
@@ -178,33 +192,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlertDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox911)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxiMOMPlaceholder)).BeginInit();
-            this.tabPageProvider.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProviderPatientList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxiMOMProviderPlaceholder)).BeginInit();
-            this.tabPageMonitor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartCapture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonitorPlaceholder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPairing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHome)).BeginInit();
-            this.tabPageAlert.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeAlert)).BeginInit();
-            this.tabPageScheduler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSchedulerHome)).BeginInit();
-            this.tabPage911.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCall911)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView911)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox911Gif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHome911)).BeginInit();
-            this.tabPageHealthResources.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeResources)).BeginInit();
-            this.tabPageProvideChat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeChat)).BeginInit();
-            this.tabPageReport.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReportResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReportHome)).BeginInit();
-            this.tabPageGina.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaThreshold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaRefill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaAlert)).BeginInit();
@@ -268,12 +268,555 @@
             this.tabPagePatient.Controls.Add(this.buttonAlertDashboard);
             this.tabPagePatient.Controls.Add(this.pictureBox911);
             this.tabPagePatient.Controls.Add(this.pictureBoxiMOMPlaceholder);
-            this.tabPagePatient.Location = new System.Drawing.Point(4, 26);
+            this.tabPagePatient.Location = new System.Drawing.Point(4, 30);
             this.tabPagePatient.Name = "tabPagePatient";
             this.tabPagePatient.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePatient.Size = new System.Drawing.Size(366, 625);
+            this.tabPagePatient.Size = new System.Drawing.Size(366, 621);
             this.tabPagePatient.TabIndex = 0;
             this.tabPagePatient.Text = "Patient";
+            // 
+            // buttonAlertDashboard
+            // 
+            this.buttonAlertDashboard.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAlertDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAlertDashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAlertDashboard.Location = new System.Drawing.Point(133, 99);
+            this.buttonAlertDashboard.Name = "buttonAlertDashboard";
+            this.buttonAlertDashboard.Size = new System.Drawing.Size(101, 73);
+            this.buttonAlertDashboard.TabIndex = 6;
+            this.buttonAlertDashboard.Text = "Alert Dashboard";
+            this.buttonAlertDashboard.UseVisualStyleBackColor = false;
+            this.buttonAlertDashboard.Click += new System.EventHandler(this.buttonAlertDashboard_Click);
+            // 
+            // tabPageProvider
+            // 
+            this.tabPageProvider.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tabPageProvider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPageProvider.Controls.Add(this.dataGridViewProviderPatientList);
+            this.tabPageProvider.Controls.Add(this.pictureBoxiMOMProviderPlaceholder);
+            this.tabPageProvider.Location = new System.Drawing.Point(4, 30);
+            this.tabPageProvider.Name = "tabPageProvider";
+            this.tabPageProvider.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProvider.Size = new System.Drawing.Size(366, 621);
+            this.tabPageProvider.TabIndex = 1;
+            this.tabPageProvider.Text = "Provider";
+            // 
+            // dataGridViewProviderPatientList
+            // 
+            this.dataGridViewProviderPatientList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewProviderPatientList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewProviderPatientList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProviderPatientList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.PatName,
+            this.DOB});
+            this.dataGridViewProviderPatientList.Location = new System.Drawing.Point(4, 164);
+            this.dataGridViewProviderPatientList.Name = "dataGridViewProviderPatientList";
+            this.dataGridViewProviderPatientList.RowHeadersVisible = false;
+            this.dataGridViewProviderPatientList.RowTemplate.Height = 24;
+            this.dataGridViewProviderPatientList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewProviderPatientList.Size = new System.Drawing.Size(354, 449);
+            this.dataGridViewProviderPatientList.TabIndex = 1;
+            this.dataGridViewProviderPatientList.Click += new System.EventHandler(this.dataGridViewProviderPatientList_Click);
+            // 
+            // Id
+            // 
+            this.Id.FillWeight = 50.76142F;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // PatName
+            // 
+            this.PatName.FillWeight = 149.2386F;
+            this.PatName.HeaderText = "Name";
+            this.PatName.Name = "PatName";
+            // 
+            // DOB
+            // 
+            this.DOB.HeaderText = "DOB";
+            this.DOB.Name = "DOB";
+            this.DOB.ReadOnly = true;
+            // 
+            // tabPageMonitor
+            // 
+            this.tabPageMonitor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tabPageMonitor.Controls.Add(this.pictureBoxStartCapture);
+            this.tabPageMonitor.Controls.Add(this.pictureBoxMonitorPlaceholder);
+            this.tabPageMonitor.Controls.Add(this.pictureBoxPairing);
+            this.tabPageMonitor.Controls.Add(this.richTextBoxMonitorAlert);
+            this.tabPageMonitor.Controls.Add(this.textBoxMonitor);
+            this.tabPageMonitor.Controls.Add(this.buttonStartCapture);
+            this.tabPageMonitor.Controls.Add(this.progressBar1);
+            this.tabPageMonitor.Controls.Add(this.pictureBoxHome);
+            this.tabPageMonitor.Location = new System.Drawing.Point(4, 30);
+            this.tabPageMonitor.Name = "tabPageMonitor";
+            this.tabPageMonitor.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageMonitor.Size = new System.Drawing.Size(366, 621);
+            this.tabPageMonitor.TabIndex = 2;
+            this.tabPageMonitor.Text = "Monitor";
+            // 
+            // richTextBoxMonitorAlert
+            // 
+            this.richTextBoxMonitorAlert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.richTextBoxMonitorAlert.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxMonitorAlert.Location = new System.Drawing.Point(0, 315);
+            this.richTextBoxMonitorAlert.Name = "richTextBoxMonitorAlert";
+            this.richTextBoxMonitorAlert.Size = new System.Drawing.Size(368, 91);
+            this.richTextBoxMonitorAlert.TabIndex = 9;
+            this.richTextBoxMonitorAlert.Text = "";
+            // 
+            // textBoxMonitor
+            // 
+            this.textBoxMonitor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBoxMonitor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMonitor.Enabled = false;
+            this.textBoxMonitor.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMonitor.Location = new System.Drawing.Point(0, 3);
+            this.textBoxMonitor.Multiline = true;
+            this.textBoxMonitor.Name = "textBoxMonitor";
+            this.textBoxMonitor.Size = new System.Drawing.Size(253, 244);
+            this.textBoxMonitor.TabIndex = 3;
+            this.textBoxMonitor.Text = "Captures the measurements from \r\nthe Contractions monitor and \r\ntransmits real-ti" +
+    "me to the \r\nprovider system.\r\n\r\nPair the Contraction monitor \r\ndevice with your " +
+    "phone before \r\nstarting the session.";
+            // 
+            // buttonStartCapture
+            // 
+            this.buttonStartCapture.Location = new System.Drawing.Point(0, 0);
+            this.buttonStartCapture.Name = "buttonStartCapture";
+            this.buttonStartCapture.Size = new System.Drawing.Size(75, 23);
+            this.buttonStartCapture.TabIndex = 7;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.progressBar1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.progressBar1.Location = new System.Drawing.Point(0, 246);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(366, 70);
+            this.progressBar1.TabIndex = 4;
+            // 
+            // tabPageAlert
+            // 
+            this.tabPageAlert.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tabPageAlert.Controls.Add(this.richTextBoxAlert);
+            this.tabPageAlert.Controls.Add(this.dataGridViewAlert);
+            this.tabPageAlert.Controls.Add(this.pictureBoxHomeAlert);
+            this.tabPageAlert.Location = new System.Drawing.Point(4, 30);
+            this.tabPageAlert.Name = "tabPageAlert";
+            this.tabPageAlert.Size = new System.Drawing.Size(366, 621);
+            this.tabPageAlert.TabIndex = 3;
+            this.tabPageAlert.Text = "Alert Dashboard";
+            // 
+            // richTextBoxAlert
+            // 
+            this.richTextBoxAlert.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.richTextBoxAlert.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxAlert.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxAlert.Name = "richTextBoxAlert";
+            this.richTextBoxAlert.Size = new System.Drawing.Size(283, 103);
+            this.richTextBoxAlert.TabIndex = 10;
+            this.richTextBoxAlert.Text = "View the latest notifications and alerts from the Provider office.";
+            // 
+            // dataGridViewAlert
+            // 
+            this.dataGridViewAlert.AllowUserToAddRows = false;
+            this.dataGridViewAlert.AllowUserToDeleteRows = false;
+            this.dataGridViewAlert.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridViewAlert.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewAlert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAlert.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Date,
+            this.Action,
+            this.Message});
+            this.dataGridViewAlert.Location = new System.Drawing.Point(0, 103);
+            this.dataGridViewAlert.MultiSelect = false;
+            this.dataGridViewAlert.Name = "dataGridViewAlert";
+            this.dataGridViewAlert.ReadOnly = true;
+            this.dataGridViewAlert.RowHeadersVisible = false;
+            this.dataGridViewAlert.RowTemplate.Height = 24;
+            this.dataGridViewAlert.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewAlert.ShowCellErrors = false;
+            this.dataGridViewAlert.ShowEditingIcon = false;
+            this.dataGridViewAlert.ShowRowErrors = false;
+            this.dataGridViewAlert.Size = new System.Drawing.Size(367, 523);
+            this.dataGridViewAlert.TabIndex = 1;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            this.Date.Width = 71;
+            // 
+            // Action
+            // 
+            this.Action.HeaderText = "Action";
+            this.Action.Name = "Action";
+            this.Action.ReadOnly = true;
+            this.Action.Width = 83;
+            // 
+            // Message
+            // 
+            this.Message.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Message.HeaderText = "Message";
+            this.Message.Name = "Message";
+            this.Message.ReadOnly = true;
+            // 
+            // tabPageScheduler
+            // 
+            this.tabPageScheduler.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tabPageScheduler.Controls.Add(this.buttonToggleCalendarView);
+            this.tabPageScheduler.Controls.Add(this.richTextBoxScheduler);
+            this.tabPageScheduler.Controls.Add(this.calendarScheduler);
+            this.tabPageScheduler.Controls.Add(this.pictureBoxSchedulerHome);
+            this.tabPageScheduler.Location = new System.Drawing.Point(4, 30);
+            this.tabPageScheduler.Name = "tabPageScheduler";
+            this.tabPageScheduler.Size = new System.Drawing.Size(366, 621);
+            this.tabPageScheduler.TabIndex = 4;
+            this.tabPageScheduler.Text = "Scheduler";
+            // 
+            // buttonToggleCalendarView
+            // 
+            this.buttonToggleCalendarView.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonToggleCalendarView.Location = new System.Drawing.Point(280, 85);
+            this.buttonToggleCalendarView.Name = "buttonToggleCalendarView";
+            this.buttonToggleCalendarView.Size = new System.Drawing.Size(86, 43);
+            this.buttonToggleCalendarView.TabIndex = 11;
+            this.buttonToggleCalendarView.Text = "Toggle View";
+            this.buttonToggleCalendarView.UseVisualStyleBackColor = true;
+            this.buttonToggleCalendarView.Click += new System.EventHandler(this.buttonToggleCalendarView_Click);
+            // 
+            // richTextBoxScheduler
+            // 
+            this.richTextBoxScheduler.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.richTextBoxScheduler.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxScheduler.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxScheduler.Name = "richTextBoxScheduler";
+            this.richTextBoxScheduler.Size = new System.Drawing.Size(274, 164);
+            this.richTextBoxScheduler.TabIndex = 3;
+            this.richTextBoxScheduler.Text = "View alll your prenatal appointments with your provider along with reminders for " +
+    "ultrasound, blood work appointments";
+            // 
+            // calendarScheduler
+            // 
+            this.calendarScheduler.AllowEditingEvents = true;
+            this.calendarScheduler.CalendarDate = new System.DateTime(2018, 2, 15, 19, 10, 48, 452);
+            this.calendarScheduler.CalendarView = Calendar.NET.CalendarViews.Month;
+            this.calendarScheduler.DateHeaderFont = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendarScheduler.DayOfWeekFont = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendarScheduler.DaysFont = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendarScheduler.DayViewTimeFont = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendarScheduler.DimDisabledEvents = true;
+            this.calendarScheduler.HighlightCurrentDay = true;
+            this.calendarScheduler.LoadPresetHolidays = true;
+            this.calendarScheduler.Location = new System.Drawing.Point(0, 152);
+            this.calendarScheduler.Name = "calendarScheduler";
+            this.calendarScheduler.ShowArrowControls = true;
+            this.calendarScheduler.ShowDashedBorderOnDisabledEvents = true;
+            this.calendarScheduler.ShowDateInHeader = true;
+            this.calendarScheduler.ShowDisabledEvents = false;
+            this.calendarScheduler.ShowEventTooltips = true;
+            this.calendarScheduler.ShowTodayButton = true;
+            this.calendarScheduler.Size = new System.Drawing.Size(367, 470);
+            this.calendarScheduler.TabIndex = 2;
+            this.calendarScheduler.TodayFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            // 
+            // tabPage911
+            // 
+            this.tabPage911.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tabPage911.Controls.Add(this.pictureBoxCall911);
+            this.tabPage911.Controls.Add(this.dataGridView911);
+            this.tabPage911.Controls.Add(this.richTextBox911);
+            this.tabPage911.Controls.Add(this.pictureBox911Gif);
+            this.tabPage911.Controls.Add(this.pictureBoxHome911);
+            this.tabPage911.Location = new System.Drawing.Point(4, 30);
+            this.tabPage911.Name = "tabPage911";
+            this.tabPage911.Size = new System.Drawing.Size(366, 621);
+            this.tabPage911.TabIndex = 5;
+            this.tabPage911.Text = "911";
+            // 
+            // dataGridView911
+            // 
+            this.dataGridView911.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView911.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Tracker});
+            this.dataGridView911.Location = new System.Drawing.Point(0, 144);
+            this.dataGridView911.Name = "dataGridView911";
+            this.dataGridView911.RowTemplate.Height = 24;
+            this.dataGridView911.Size = new System.Drawing.Size(369, 302);
+            this.dataGridView911.TabIndex = 14;
+            // 
+            // Tracker
+            // 
+            this.Tracker.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Tracker.HeaderText = "Tracker";
+            this.Tracker.Name = "Tracker";
+            this.Tracker.ReadOnly = true;
+            // 
+            // richTextBox911
+            // 
+            this.richTextBox911.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.richTextBox911.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox911.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox911.Name = "richTextBox911";
+            this.richTextBox911.Size = new System.Drawing.Size(270, 150);
+            this.richTextBox911.TabIndex = 12;
+            this.richTextBox911.Text = resources.GetString("richTextBox911.Text");
+            // 
+            // tabPageHealthResources
+            // 
+            this.tabPageHealthResources.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tabPageHealthResources.Controls.Add(this.labelLoading);
+            this.tabPageHealthResources.Controls.Add(this.dataGridViewResource);
+            this.tabPageHealthResources.Controls.Add(this.richTextBoxResource);
+            this.tabPageHealthResources.Controls.Add(this.webBrowserResource);
+            this.tabPageHealthResources.Controls.Add(this.pictureBoxHomeResources);
+            this.tabPageHealthResources.Location = new System.Drawing.Point(4, 30);
+            this.tabPageHealthResources.Name = "tabPageHealthResources";
+            this.tabPageHealthResources.Size = new System.Drawing.Size(366, 621);
+            this.tabPageHealthResources.TabIndex = 6;
+            this.tabPageHealthResources.Text = "HealthResources";
+            // 
+            // labelLoading
+            // 
+            this.labelLoading.AutoSize = true;
+            this.labelLoading.Location = new System.Drawing.Point(9, 295);
+            this.labelLoading.Name = "labelLoading";
+            this.labelLoading.Size = new System.Drawing.Size(76, 21);
+            this.labelLoading.TabIndex = 16;
+            this.labelLoading.Text = "Loading...";
+            this.labelLoading.Visible = false;
+            // 
+            // dataGridViewResource
+            // 
+            this.dataGridViewResource.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewResource.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResource.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColName,
+            this.Resource});
+            this.dataGridViewResource.Location = new System.Drawing.Point(0, 112);
+            this.dataGridViewResource.MultiSelect = false;
+            this.dataGridViewResource.Name = "dataGridViewResource";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridViewResource.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridViewResource.RowHeadersVisible = false;
+            this.dataGridViewResource.RowTemplate.Height = 24;
+            this.dataGridViewResource.RowTemplate.ReadOnly = true;
+            this.dataGridViewResource.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewResource.ShowCellErrors = false;
+            this.dataGridViewResource.ShowEditingIcon = false;
+            this.dataGridViewResource.ShowRowErrors = false;
+            this.dataGridViewResource.Size = new System.Drawing.Size(367, 176);
+            this.dataGridViewResource.TabIndex = 15;
+            this.dataGridViewResource.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewResource_CellContentClick);
+            // 
+            // ColName
+            // 
+            this.ColName.FillWeight = 50.76142F;
+            this.ColName.HeaderText = "Name";
+            this.ColName.Name = "ColName";
+            this.ColName.ReadOnly = true;
+            // 
+            // Resource
+            // 
+            this.Resource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Resource.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Resource.FillWeight = 149.2386F;
+            this.Resource.HeaderText = "Link";
+            this.Resource.Name = "Resource";
+            this.Resource.ReadOnly = true;
+            // 
+            // richTextBoxResource
+            // 
+            this.richTextBoxResource.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.richTextBoxResource.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxResource.Location = new System.Drawing.Point(0, 3);
+            this.richTextBoxResource.Name = "richTextBoxResource";
+            this.richTextBoxResource.Size = new System.Drawing.Size(270, 111);
+            this.richTextBoxResource.TabIndex = 14;
+            this.richTextBoxResource.Text = "Individualized instructional videos and other helpful resources from the provider" +
+    ".\n\nSelect videos from below:";
+            // 
+            // webBrowserResource
+            // 
+            this.webBrowserResource.Location = new System.Drawing.Point(8, 331);
+            this.webBrowserResource.MinimumSize = new System.Drawing.Size(20, 21);
+            this.webBrowserResource.Name = "webBrowserResource";
+            this.webBrowserResource.ScriptErrorsSuppressed = true;
+            this.webBrowserResource.Size = new System.Drawing.Size(343, 282);
+            this.webBrowserResource.TabIndex = 13;
+            // 
+            // tabPageProvideChat
+            // 
+            this.tabPageProvideChat.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tabPageProvideChat.Controls.Add(this.richTextBoxChatResponse);
+            this.tabPageProvideChat.Controls.Add(this.richTextBoxProviderChat);
+            this.tabPageProvideChat.Controls.Add(this.buttonChatSubmit);
+            this.tabPageProvideChat.Controls.Add(this.richTextBoxTypeChat);
+            this.tabPageProvideChat.Controls.Add(this.pictureBoxHomeChat);
+            this.tabPageProvideChat.Location = new System.Drawing.Point(4, 30);
+            this.tabPageProvideChat.Name = "tabPageProvideChat";
+            this.tabPageProvideChat.Size = new System.Drawing.Size(366, 621);
+            this.tabPageProvideChat.TabIndex = 7;
+            this.tabPageProvideChat.Text = "ProviderChat";
+            // 
+            // richTextBoxChatResponse
+            // 
+            this.richTextBoxChatResponse.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.richTextBoxChatResponse.Location = new System.Drawing.Point(0, 107);
+            this.richTextBoxChatResponse.Name = "richTextBoxChatResponse";
+            this.richTextBoxChatResponse.Size = new System.Drawing.Size(366, 343);
+            this.richTextBoxChatResponse.TabIndex = 14;
+            this.richTextBoxChatResponse.Text = "";
+            // 
+            // richTextBoxProviderChat
+            // 
+            this.richTextBoxProviderChat.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.richTextBoxProviderChat.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxProviderChat.Location = new System.Drawing.Point(0, 5);
+            this.richTextBoxProviderChat.Name = "richTextBoxProviderChat";
+            this.richTextBoxProviderChat.Size = new System.Drawing.Size(273, 95);
+            this.richTextBoxProviderChat.TabIndex = 2;
+            this.richTextBoxProviderChat.Text = "Chat with your provider about all your concerns/ clarifications.";
+            // 
+            // buttonChatSubmit
+            // 
+            this.buttonChatSubmit.Location = new System.Drawing.Point(265, 569);
+            this.buttonChatSubmit.Name = "buttonChatSubmit";
+            this.buttonChatSubmit.Size = new System.Drawing.Size(102, 53);
+            this.buttonChatSubmit.TabIndex = 1;
+            this.buttonChatSubmit.Text = "Submit";
+            this.buttonChatSubmit.UseVisualStyleBackColor = true;
+            this.buttonChatSubmit.Click += new System.EventHandler(this.buttonChatSubmit_Click);
+            // 
+            // richTextBoxTypeChat
+            // 
+            this.richTextBoxTypeChat.BackColor = System.Drawing.SystemColors.Menu;
+            this.richTextBoxTypeChat.Location = new System.Drawing.Point(-3, 456);
+            this.richTextBoxTypeChat.Name = "richTextBoxTypeChat";
+            this.richTextBoxTypeChat.Size = new System.Drawing.Size(370, 107);
+            this.richTextBoxTypeChat.TabIndex = 0;
+            this.richTextBoxTypeChat.Text = "";
+            this.richTextBoxTypeChat.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.richTextBoxTypeChat_PreviewKeyDown);
+            // 
+            // tabPageReport
+            // 
+            this.tabPageReport.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tabPageReport.Controls.Add(this.labelResult);
+            this.tabPageReport.Controls.Add(this.dataGridViewReportResult);
+            this.tabPageReport.Controls.Add(this.richTextBoxReportResult);
+            this.tabPageReport.Controls.Add(this.richTextBoxReport);
+            this.tabPageReport.Controls.Add(this.pictureBoxReportHome);
+            this.tabPageReport.Location = new System.Drawing.Point(4, 30);
+            this.tabPageReport.Name = "tabPageReport";
+            this.tabPageReport.Size = new System.Drawing.Size(366, 621);
+            this.tabPageReport.TabIndex = 8;
+            this.tabPageReport.Text = "Report";
+            // 
+            // labelResult
+            // 
+            this.labelResult.AutoSize = true;
+            this.labelResult.Location = new System.Drawing.Point(3, 374);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(109, 21);
+            this.labelResult.TabIndex = 17;
+            this.labelResult.Text = "Result Details:";
+            // 
+            // dataGridViewReportResult
+            // 
+            this.dataGridViewReportResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewReportResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewReportResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RepDate,
+            this.Test,
+            this.Result});
+            this.dataGridViewReportResult.Location = new System.Drawing.Point(0, 118);
+            this.dataGridViewReportResult.Name = "dataGridViewReportResult";
+            this.dataGridViewReportResult.RowHeadersVisible = false;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewReportResult.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewReportResult.RowTemplate.Height = 24;
+            this.dataGridViewReportResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewReportResult.Size = new System.Drawing.Size(366, 229);
+            this.dataGridViewReportResult.TabIndex = 16;
+            this.dataGridViewReportResult.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewReportResult_CellClick);
+            // 
+            // RepDate
+            // 
+            this.RepDate.FillWeight = 34.95692F;
+            this.RepDate.HeaderText = "Date";
+            this.RepDate.Name = "RepDate";
+            this.RepDate.ReadOnly = true;
+            // 
+            // Test
+            // 
+            this.Test.FillWeight = 100.5761F;
+            this.Test.HeaderText = "Test";
+            this.Test.Name = "Test";
+            this.Test.ReadOnly = true;
+            // 
+            // Result
+            // 
+            this.Result.FillWeight = 164.467F;
+            this.Result.HeaderText = "Result";
+            this.Result.Name = "Result";
+            this.Result.ReadOnly = true;
+            // 
+            // richTextBoxReportResult
+            // 
+            this.richTextBoxReportResult.Location = new System.Drawing.Point(0, 398);
+            this.richTextBoxReportResult.Name = "richTextBoxReportResult";
+            this.richTextBoxReportResult.Size = new System.Drawing.Size(370, 223);
+            this.richTextBoxReportResult.TabIndex = 15;
+            this.richTextBoxReportResult.Text = "";
+            // 
+            // richTextBoxReport
+            // 
+            this.richTextBoxReport.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.richTextBoxReport.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxReport.Location = new System.Drawing.Point(3, 3);
+            this.richTextBoxReport.Name = "richTextBoxReport";
+            this.richTextBoxReport.Size = new System.Drawing.Size(264, 109);
+            this.richTextBoxReport.TabIndex = 3;
+            this.richTextBoxReport.Text = "Results of the tests/ examinations taken.\n\nSelect a report to view the details:";
+            // 
+            // tabPageGina
+            // 
+            this.tabPageGina.Controls.Add(this.pictureBoxGinaThreshold);
+            this.tabPageGina.Controls.Add(this.pictureBoxGinaRefill);
+            this.tabPageGina.Controls.Add(this.pictureBoxGinaAlert);
+            this.tabPageGina.Controls.Add(this.pictureBoxGinaHome);
+            this.tabPageGina.Controls.Add(this.pictureBoxBackgroundGina);
+            this.tabPageGina.Location = new System.Drawing.Point(4, 30);
+            this.tabPageGina.Name = "tabPageGina";
+            this.tabPageGina.Size = new System.Drawing.Size(366, 621);
+            this.tabPageGina.TabIndex = 9;
+            this.tabPageGina.Text = "Patient";
+            this.tabPageGina.UseVisualStyleBackColor = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // timer911
+            // 
+            this.timer911.Enabled = true;
+            this.timer911.Interval = 1000;
+            this.timer911.Tick += new System.EventHandler(this.timer911_Tick);
             // 
             // pictureBoxReport
             // 
@@ -341,19 +884,6 @@
             this.pictureBoxAlertDashboard.TabStop = false;
             this.pictureBoxAlertDashboard.Click += new System.EventHandler(this.pictureBoxAlertDashboard_Click);
             // 
-            // buttonAlertDashboard
-            // 
-            this.buttonAlertDashboard.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAlertDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAlertDashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAlertDashboard.Location = new System.Drawing.Point(133, 99);
-            this.buttonAlertDashboard.Name = "buttonAlertDashboard";
-            this.buttonAlertDashboard.Size = new System.Drawing.Size(101, 73);
-            this.buttonAlertDashboard.TabIndex = 6;
-            this.buttonAlertDashboard.Text = "Alert Dashboard";
-            this.buttonAlertDashboard.UseVisualStyleBackColor = false;
-            this.buttonAlertDashboard.Click += new System.EventHandler(this.buttonAlertDashboard_Click);
-            // 
             // pictureBox911
             // 
             this.pictureBox911.Image = global::iMOM.Properties.Resources._911;
@@ -377,56 +907,6 @@
             this.pictureBoxiMOMPlaceholder.TabIndex = 13;
             this.pictureBoxiMOMPlaceholder.TabStop = false;
             // 
-            // tabPageProvider
-            // 
-            this.tabPageProvider.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPageProvider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPageProvider.Controls.Add(this.dataGridViewProviderPatientList);
-            this.tabPageProvider.Controls.Add(this.pictureBoxiMOMProviderPlaceholder);
-            this.tabPageProvider.Location = new System.Drawing.Point(4, 26);
-            this.tabPageProvider.Name = "tabPageProvider";
-            this.tabPageProvider.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProvider.Size = new System.Drawing.Size(366, 625);
-            this.tabPageProvider.TabIndex = 1;
-            this.tabPageProvider.Text = "Provider";
-            // 
-            // dataGridViewProviderPatientList
-            // 
-            this.dataGridViewProviderPatientList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewProviderPatientList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridViewProviderPatientList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProviderPatientList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.PatName,
-            this.DOB});
-            this.dataGridViewProviderPatientList.Location = new System.Drawing.Point(4, 164);
-            this.dataGridViewProviderPatientList.Name = "dataGridViewProviderPatientList";
-            this.dataGridViewProviderPatientList.RowHeadersVisible = false;
-            this.dataGridViewProviderPatientList.RowTemplate.Height = 24;
-            this.dataGridViewProviderPatientList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewProviderPatientList.Size = new System.Drawing.Size(354, 449);
-            this.dataGridViewProviderPatientList.TabIndex = 1;
-            this.dataGridViewProviderPatientList.Click += new System.EventHandler(this.dataGridViewProviderPatientList_Click);
-            // 
-            // Id
-            // 
-            this.Id.FillWeight = 50.76142F;
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            // 
-            // PatName
-            // 
-            this.PatName.FillWeight = 149.2386F;
-            this.PatName.HeaderText = "Name";
-            this.PatName.Name = "PatName";
-            // 
-            // DOB
-            // 
-            this.DOB.HeaderText = "DOB";
-            this.DOB.Name = "DOB";
-            this.DOB.ReadOnly = true;
-            // 
             // pictureBoxiMOMProviderPlaceholder
             // 
             this.pictureBoxiMOMProviderPlaceholder.Image = global::iMOM.Properties.Resources.BackgroundProvider;
@@ -437,30 +917,12 @@
             this.pictureBoxiMOMProviderPlaceholder.TabIndex = 0;
             this.pictureBoxiMOMProviderPlaceholder.TabStop = false;
             // 
-            // tabPageMonitor
-            // 
-            this.tabPageMonitor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tabPageMonitor.Controls.Add(this.pictureBoxStartCapture);
-            this.tabPageMonitor.Controls.Add(this.pictureBoxMonitorPlaceholder);
-            this.tabPageMonitor.Controls.Add(this.pictureBoxPairing);
-            this.tabPageMonitor.Controls.Add(this.richTextBoxMonitorAlert);
-            this.tabPageMonitor.Controls.Add(this.textBoxMonitor);
-            this.tabPageMonitor.Controls.Add(this.buttonStartCapture);
-            this.tabPageMonitor.Controls.Add(this.progressBar1);
-            this.tabPageMonitor.Controls.Add(this.pictureBoxHome);
-            this.tabPageMonitor.Location = new System.Drawing.Point(4, 26);
-            this.tabPageMonitor.Name = "tabPageMonitor";
-            this.tabPageMonitor.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMonitor.Size = new System.Drawing.Size(366, 625);
-            this.tabPageMonitor.TabIndex = 2;
-            this.tabPageMonitor.Text = "Monitor";
-            // 
             // pictureBoxStartCapture
             // 
             this.pictureBoxStartCapture.Image = global::iMOM.Properties.Resources.Capture1;
-            this.pictureBoxStartCapture.Location = new System.Drawing.Point(253, 129);
+            this.pictureBoxStartCapture.Location = new System.Drawing.Point(284, 169);
             this.pictureBoxStartCapture.Name = "pictureBoxStartCapture";
-            this.pictureBoxStartCapture.Size = new System.Drawing.Size(114, 118);
+            this.pictureBoxStartCapture.Size = new System.Drawing.Size(74, 71);
             this.pictureBoxStartCapture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxStartCapture.TabIndex = 12;
             this.pictureBoxStartCapture.TabStop = false;
@@ -478,259 +940,57 @@
             // pictureBoxPairing
             // 
             this.pictureBoxPairing.Image = global::iMOM.Properties.Resources.BlueToothPairing;
-            this.pictureBoxPairing.Location = new System.Drawing.Point(274, 70);
+            this.pictureBoxPairing.Location = new System.Drawing.Point(190, 169);
             this.pictureBoxPairing.Name = "pictureBoxPairing";
-            this.pictureBoxPairing.Size = new System.Drawing.Size(63, 53);
+            this.pictureBoxPairing.Size = new System.Drawing.Size(78, 71);
             this.pictureBoxPairing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPairing.TabIndex = 10;
             this.pictureBoxPairing.TabStop = false;
             this.pictureBoxPairing.Click += new System.EventHandler(this.pictureBoxPairing_Click);
             // 
-            // richTextBoxMonitorAlert
-            // 
-            this.richTextBoxMonitorAlert.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.richTextBoxMonitorAlert.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxMonitorAlert.Location = new System.Drawing.Point(0, 315);
-            this.richTextBoxMonitorAlert.Name = "richTextBoxMonitorAlert";
-            this.richTextBoxMonitorAlert.Size = new System.Drawing.Size(368, 91);
-            this.richTextBoxMonitorAlert.TabIndex = 9;
-            this.richTextBoxMonitorAlert.Text = "";
-            // 
-            // textBoxMonitor
-            // 
-            this.textBoxMonitor.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxMonitor.Enabled = false;
-            this.textBoxMonitor.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMonitor.Location = new System.Drawing.Point(0, 3);
-            this.textBoxMonitor.Multiline = true;
-            this.textBoxMonitor.Name = "textBoxMonitor";
-            this.textBoxMonitor.Size = new System.Drawing.Size(253, 244);
-            this.textBoxMonitor.TabIndex = 3;
-            this.textBoxMonitor.Text = "Captures the measurements from \r\nthe Contractions monitor and \r\ntransmits real-ti" +
-    "me to the \r\nprovider system.\r\n\r\n\r\nPair the Contraction monitor \r\ndevice with you" +
-    "r phone before \r\nstarting the session.";
-            // 
-            // buttonStartCapture
-            // 
-            this.buttonStartCapture.Location = new System.Drawing.Point(0, 0);
-            this.buttonStartCapture.Name = "buttonStartCapture";
-            this.buttonStartCapture.Size = new System.Drawing.Size(75, 23);
-            this.buttonStartCapture.TabIndex = 7;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.progressBar1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.progressBar1.Location = new System.Drawing.Point(0, 246);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(366, 70);
-            this.progressBar1.TabIndex = 4;
-            // 
             // pictureBoxHome
             // 
             this.pictureBoxHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHome.Location = new System.Drawing.Point(274, 0);
+            this.pictureBoxHome.Location = new System.Drawing.Point(275, 6);
             this.pictureBoxHome.Name = "pictureBoxHome";
-            this.pictureBoxHome.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxHome.Size = new System.Drawing.Size(85, 79);
+            this.pictureBoxHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxHome.TabIndex = 8;
             this.pictureBoxHome.TabStop = false;
             this.pictureBoxHome.Click += new System.EventHandler(this.pictureBoxHome_Click);
             // 
-            // tabPageAlert
-            // 
-            this.tabPageAlert.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tabPageAlert.Controls.Add(this.richTextBoxAlert);
-            this.tabPageAlert.Controls.Add(this.dataGridViewAlert);
-            this.tabPageAlert.Controls.Add(this.pictureBoxHomeAlert);
-            this.tabPageAlert.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAlert.Name = "tabPageAlert";
-            this.tabPageAlert.Size = new System.Drawing.Size(366, 625);
-            this.tabPageAlert.TabIndex = 3;
-            this.tabPageAlert.Text = "Alert Dashboard";
-            // 
-            // richTextBoxAlert
-            // 
-            this.richTextBoxAlert.Location = new System.Drawing.Point(0, 0);
-            this.richTextBoxAlert.Name = "richTextBoxAlert";
-            this.richTextBoxAlert.Size = new System.Drawing.Size(283, 103);
-            this.richTextBoxAlert.TabIndex = 10;
-            this.richTextBoxAlert.Text = "View the latest notifications and alerts from the Provider office.";
-            // 
-            // dataGridViewAlert
-            // 
-            this.dataGridViewAlert.AllowUserToAddRows = false;
-            this.dataGridViewAlert.AllowUserToDeleteRows = false;
-            this.dataGridViewAlert.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dataGridViewAlert.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridViewAlert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAlert.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Date,
-            this.Action,
-            this.Message});
-            this.dataGridViewAlert.Location = new System.Drawing.Point(0, 103);
-            this.dataGridViewAlert.MultiSelect = false;
-            this.dataGridViewAlert.Name = "dataGridViewAlert";
-            this.dataGridViewAlert.ReadOnly = true;
-            this.dataGridViewAlert.RowHeadersVisible = false;
-            this.dataGridViewAlert.RowTemplate.Height = 24;
-            this.dataGridViewAlert.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewAlert.ShowCellErrors = false;
-            this.dataGridViewAlert.ShowEditingIcon = false;
-            this.dataGridViewAlert.ShowRowErrors = false;
-            this.dataGridViewAlert.Size = new System.Drawing.Size(367, 523);
-            this.dataGridViewAlert.TabIndex = 1;
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            this.Date.ReadOnly = true;
-            this.Date.Width = 59;
-            // 
-            // Action
-            // 
-            this.Action.HeaderText = "Action";
-            this.Action.Name = "Action";
-            this.Action.ReadOnly = true;
-            this.Action.Width = 67;
-            // 
-            // Message
-            // 
-            this.Message.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Message.HeaderText = "Message";
-            this.Message.Name = "Message";
-            this.Message.ReadOnly = true;
-            // 
             // pictureBoxHomeAlert
             // 
             this.pictureBoxHomeAlert.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHomeAlert.Location = new System.Drawing.Point(283, 0);
+            this.pictureBoxHomeAlert.Location = new System.Drawing.Point(278, 0);
             this.pictureBoxHomeAlert.Name = "pictureBoxHomeAlert";
-            this.pictureBoxHomeAlert.Size = new System.Drawing.Size(80, 71);
+            this.pictureBoxHomeAlert.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxHomeAlert.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxHomeAlert.TabIndex = 9;
             this.pictureBoxHomeAlert.TabStop = false;
             this.pictureBoxHomeAlert.Click += new System.EventHandler(this.pictureBoxHomeAlert_Click);
             // 
-            // tabPageScheduler
-            // 
-            this.tabPageScheduler.Controls.Add(this.buttonToggleCalendarView);
-            this.tabPageScheduler.Controls.Add(this.richTextBoxScheduler);
-            this.tabPageScheduler.Controls.Add(this.calendarScheduler);
-            this.tabPageScheduler.Controls.Add(this.pictureBoxSchedulerHome);
-            this.tabPageScheduler.Location = new System.Drawing.Point(4, 26);
-            this.tabPageScheduler.Name = "tabPageScheduler";
-            this.tabPageScheduler.Size = new System.Drawing.Size(366, 625);
-            this.tabPageScheduler.TabIndex = 4;
-            this.tabPageScheduler.Text = "Scheduler";
-            this.tabPageScheduler.UseVisualStyleBackColor = true;
-            // 
-            // buttonToggleCalendarView
-            // 
-            this.buttonToggleCalendarView.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonToggleCalendarView.Location = new System.Drawing.Point(273, 120);
-            this.buttonToggleCalendarView.Name = "buttonToggleCalendarView";
-            this.buttonToggleCalendarView.Size = new System.Drawing.Size(94, 43);
-            this.buttonToggleCalendarView.TabIndex = 11;
-            this.buttonToggleCalendarView.Text = "Toggle View";
-            this.buttonToggleCalendarView.UseVisualStyleBackColor = true;
-            this.buttonToggleCalendarView.Click += new System.EventHandler(this.buttonToggleCalendarView_Click);
-            // 
-            // richTextBoxScheduler
-            // 
-            this.richTextBoxScheduler.Location = new System.Drawing.Point(-4, 0);
-            this.richTextBoxScheduler.Name = "richTextBoxScheduler";
-            this.richTextBoxScheduler.Size = new System.Drawing.Size(278, 164);
-            this.richTextBoxScheduler.TabIndex = 3;
-            this.richTextBoxScheduler.Text = "View alll your prenatal appointments with your provider along with reminders for " +
-    "ultrasound, blood work appointments";
-            // 
-            // calendarScheduler
-            // 
-            this.calendarScheduler.AllowEditingEvents = true;
-            this.calendarScheduler.CalendarDate = new System.DateTime(2018, 2, 15, 19, 10, 48, 452);
-            this.calendarScheduler.CalendarView = Calendar.NET.CalendarViews.Month;
-            this.calendarScheduler.DateHeaderFont = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarScheduler.DayOfWeekFont = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarScheduler.DaysFont = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarScheduler.DayViewTimeFont = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarScheduler.DimDisabledEvents = true;
-            this.calendarScheduler.HighlightCurrentDay = true;
-            this.calendarScheduler.LoadPresetHolidays = true;
-            this.calendarScheduler.Location = new System.Drawing.Point(0, 152);
-            this.calendarScheduler.Name = "calendarScheduler";
-            this.calendarScheduler.ShowArrowControls = true;
-            this.calendarScheduler.ShowDashedBorderOnDisabledEvents = true;
-            this.calendarScheduler.ShowDateInHeader = true;
-            this.calendarScheduler.ShowDisabledEvents = false;
-            this.calendarScheduler.ShowEventTooltips = true;
-            this.calendarScheduler.ShowTodayButton = true;
-            this.calendarScheduler.Size = new System.Drawing.Size(367, 470);
-            this.calendarScheduler.TabIndex = 2;
-            this.calendarScheduler.TodayFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            // 
             // pictureBoxSchedulerHome
             // 
             this.pictureBoxSchedulerHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxSchedulerHome.Location = new System.Drawing.Point(273, 0);
+            this.pictureBoxSchedulerHome.Location = new System.Drawing.Point(280, 0);
             this.pictureBoxSchedulerHome.Name = "pictureBoxSchedulerHome";
-            this.pictureBoxSchedulerHome.Size = new System.Drawing.Size(94, 79);
+            this.pictureBoxSchedulerHome.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxSchedulerHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSchedulerHome.TabIndex = 10;
             this.pictureBoxSchedulerHome.TabStop = false;
             this.pictureBoxSchedulerHome.Click += new System.EventHandler(this.pictureBoxSchedulerHome_Click);
             // 
-            // tabPage911
-            // 
-            this.tabPage911.Controls.Add(this.pictureBoxCall911);
-            this.tabPage911.Controls.Add(this.dataGridView911);
-            this.tabPage911.Controls.Add(this.richTextBox911);
-            this.tabPage911.Controls.Add(this.pictureBox911Gif);
-            this.tabPage911.Controls.Add(this.pictureBoxHome911);
-            this.tabPage911.Location = new System.Drawing.Point(4, 26);
-            this.tabPage911.Name = "tabPage911";
-            this.tabPage911.Size = new System.Drawing.Size(366, 625);
-            this.tabPage911.TabIndex = 5;
-            this.tabPage911.Text = "911";
-            this.tabPage911.UseVisualStyleBackColor = true;
-            // 
             // pictureBoxCall911
             // 
             this.pictureBoxCall911.Image = global::iMOM.Properties.Resources.Call911;
-            this.pictureBoxCall911.Location = new System.Drawing.Point(272, 66);
+            this.pictureBoxCall911.Location = new System.Drawing.Point(277, 77);
             this.pictureBoxCall911.Name = "pictureBoxCall911";
-            this.pictureBoxCall911.Size = new System.Drawing.Size(98, 77);
+            this.pictureBoxCall911.Size = new System.Drawing.Size(86, 66);
             this.pictureBoxCall911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCall911.TabIndex = 15;
             this.pictureBoxCall911.TabStop = false;
             this.pictureBoxCall911.Click += new System.EventHandler(this.pictureBoxCall911_Click);
-            // 
-            // dataGridView911
-            // 
-            this.dataGridView911.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView911.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Tracker});
-            this.dataGridView911.Location = new System.Drawing.Point(0, 144);
-            this.dataGridView911.Name = "dataGridView911";
-            this.dataGridView911.RowTemplate.Height = 24;
-            this.dataGridView911.Size = new System.Drawing.Size(369, 302);
-            this.dataGridView911.TabIndex = 14;
-            // 
-            // Tracker
-            // 
-            this.Tracker.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Tracker.HeaderText = "Tracker";
-            this.Tracker.Name = "Tracker";
-            this.Tracker.ReadOnly = true;
-            // 
-            // richTextBox911
-            // 
-            this.richTextBox911.Location = new System.Drawing.Point(-4, 3);
-            this.richTextBox911.Name = "richTextBox911";
-            this.richTextBox911.Size = new System.Drawing.Size(278, 150);
-            this.richTextBox911.TabIndex = 12;
-            this.richTextBox911.Text = resources.GetString("richTextBox911.Text");
             // 
             // pictureBox911Gif
             // 
@@ -746,282 +1006,51 @@
             // pictureBoxHome911
             // 
             this.pictureBoxHome911.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHome911.Location = new System.Drawing.Point(272, 0);
+            this.pictureBoxHome911.Location = new System.Drawing.Point(277, 0);
             this.pictureBoxHome911.Name = "pictureBoxHome911";
-            this.pictureBoxHome911.Size = new System.Drawing.Size(94, 71);
+            this.pictureBoxHome911.Size = new System.Drawing.Size(85, 75);
             this.pictureBoxHome911.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxHome911.TabIndex = 11;
             this.pictureBoxHome911.TabStop = false;
             this.pictureBoxHome911.Click += new System.EventHandler(this.pictureBoxHome911_Click);
             // 
-            // tabPageHealthResources
-            // 
-            this.tabPageHealthResources.Controls.Add(this.labelLoading);
-            this.tabPageHealthResources.Controls.Add(this.dataGridViewResource);
-            this.tabPageHealthResources.Controls.Add(this.richTextBoxResource);
-            this.tabPageHealthResources.Controls.Add(this.webBrowserResource);
-            this.tabPageHealthResources.Controls.Add(this.pictureBoxHomeResources);
-            this.tabPageHealthResources.Location = new System.Drawing.Point(4, 26);
-            this.tabPageHealthResources.Name = "tabPageHealthResources";
-            this.tabPageHealthResources.Size = new System.Drawing.Size(366, 625);
-            this.tabPageHealthResources.TabIndex = 6;
-            this.tabPageHealthResources.Text = "HealthResources";
-            this.tabPageHealthResources.UseVisualStyleBackColor = true;
-            // 
-            // labelLoading
-            // 
-            this.labelLoading.AutoSize = true;
-            this.labelLoading.Location = new System.Drawing.Point(9, 295);
-            this.labelLoading.Name = "labelLoading";
-            this.labelLoading.Size = new System.Drawing.Size(64, 17);
-            this.labelLoading.TabIndex = 16;
-            this.labelLoading.Text = "Loading...";
-            this.labelLoading.Visible = false;
-            // 
-            // dataGridViewResource
-            // 
-            this.dataGridViewResource.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewResource.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResource.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColName,
-            this.Resource});
-            this.dataGridViewResource.Location = new System.Drawing.Point(0, 112);
-            this.dataGridViewResource.MultiSelect = false;
-            this.dataGridViewResource.Name = "dataGridViewResource";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridViewResource.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewResource.RowHeadersVisible = false;
-            this.dataGridViewResource.RowTemplate.Height = 24;
-            this.dataGridViewResource.RowTemplate.ReadOnly = true;
-            this.dataGridViewResource.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewResource.ShowCellErrors = false;
-            this.dataGridViewResource.ShowEditingIcon = false;
-            this.dataGridViewResource.ShowRowErrors = false;
-            this.dataGridViewResource.Size = new System.Drawing.Size(367, 176);
-            this.dataGridViewResource.TabIndex = 15;
-            this.dataGridViewResource.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewResource_CellContentClick);
-            // 
-            // ColName
-            // 
-            this.ColName.FillWeight = 50.76142F;
-            this.ColName.HeaderText = "Name";
-            this.ColName.Name = "ColName";
-            this.ColName.ReadOnly = true;
-            // 
-            // Resource
-            // 
-            this.Resource.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Resource.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Resource.FillWeight = 149.2386F;
-            this.Resource.HeaderText = "Link";
-            this.Resource.Name = "Resource";
-            this.Resource.ReadOnly = true;
-            // 
-            // richTextBoxResource
-            // 
-            this.richTextBoxResource.Location = new System.Drawing.Point(0, 3);
-            this.richTextBoxResource.Name = "richTextBoxResource";
-            this.richTextBoxResource.Size = new System.Drawing.Size(270, 111);
-            this.richTextBoxResource.TabIndex = 14;
-            this.richTextBoxResource.Text = "Individualized instructional videos and other helpful resources from the provider" +
-    ".\n\nSelect videos from below:";
-            // 
-            // webBrowserResource
-            // 
-            this.webBrowserResource.Location = new System.Drawing.Point(8, 331);
-            this.webBrowserResource.MinimumSize = new System.Drawing.Size(20, 21);
-            this.webBrowserResource.Name = "webBrowserResource";
-            this.webBrowserResource.ScriptErrorsSuppressed = true;
-            this.webBrowserResource.Size = new System.Drawing.Size(343, 282);
-            this.webBrowserResource.TabIndex = 13;
-            // 
             // pictureBoxHomeResources
             // 
             this.pictureBoxHomeResources.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHomeResources.Location = new System.Drawing.Point(266, 0);
+            this.pictureBoxHomeResources.Location = new System.Drawing.Point(276, 3);
             this.pictureBoxHomeResources.Name = "pictureBoxHomeResources";
-            this.pictureBoxHomeResources.Size = new System.Drawing.Size(101, 71);
+            this.pictureBoxHomeResources.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxHomeResources.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxHomeResources.TabIndex = 12;
             this.pictureBoxHomeResources.TabStop = false;
             this.pictureBoxHomeResources.Click += new System.EventHandler(this.pictureBoxHomeResources_Click);
             // 
-            // tabPageProvideChat
-            // 
-            this.tabPageProvideChat.Controls.Add(this.richTextBoxChatResponse);
-            this.tabPageProvideChat.Controls.Add(this.richTextBoxProviderChat);
-            this.tabPageProvideChat.Controls.Add(this.buttonChatSubmit);
-            this.tabPageProvideChat.Controls.Add(this.richTextBoxTypeChat);
-            this.tabPageProvideChat.Controls.Add(this.pictureBoxHomeChat);
-            this.tabPageProvideChat.Location = new System.Drawing.Point(4, 26);
-            this.tabPageProvideChat.Name = "tabPageProvideChat";
-            this.tabPageProvideChat.Size = new System.Drawing.Size(366, 625);
-            this.tabPageProvideChat.TabIndex = 7;
-            this.tabPageProvideChat.Text = "ProviderChat";
-            this.tabPageProvideChat.UseVisualStyleBackColor = true;
-            // 
-            // richTextBoxChatResponse
-            // 
-            this.richTextBoxChatResponse.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.richTextBoxChatResponse.Location = new System.Drawing.Point(0, 107);
-            this.richTextBoxChatResponse.Name = "richTextBoxChatResponse";
-            this.richTextBoxChatResponse.Size = new System.Drawing.Size(366, 343);
-            this.richTextBoxChatResponse.TabIndex = 14;
-            this.richTextBoxChatResponse.Text = "";
-            // 
-            // richTextBoxProviderChat
-            // 
-            this.richTextBoxProviderChat.Location = new System.Drawing.Point(0, 5);
-            this.richTextBoxProviderChat.Name = "richTextBoxProviderChat";
-            this.richTextBoxProviderChat.Size = new System.Drawing.Size(273, 95);
-            this.richTextBoxProviderChat.TabIndex = 2;
-            this.richTextBoxProviderChat.Text = "Chat with your provider about all your concerns/ clarifications.";
-            // 
-            // buttonChatSubmit
-            // 
-            this.buttonChatSubmit.Location = new System.Drawing.Point(265, 569);
-            this.buttonChatSubmit.Name = "buttonChatSubmit";
-            this.buttonChatSubmit.Size = new System.Drawing.Size(102, 53);
-            this.buttonChatSubmit.TabIndex = 1;
-            this.buttonChatSubmit.Text = "Submit";
-            this.buttonChatSubmit.UseVisualStyleBackColor = true;
-            this.buttonChatSubmit.Click += new System.EventHandler(this.buttonChatSubmit_Click);
-            // 
-            // richTextBoxTypeChat
-            // 
-            this.richTextBoxTypeChat.BackColor = System.Drawing.SystemColors.Menu;
-            this.richTextBoxTypeChat.Location = new System.Drawing.Point(-3, 456);
-            this.richTextBoxTypeChat.Name = "richTextBoxTypeChat";
-            this.richTextBoxTypeChat.Size = new System.Drawing.Size(370, 107);
-            this.richTextBoxTypeChat.TabIndex = 0;
-            this.richTextBoxTypeChat.Text = "";
-            this.richTextBoxTypeChat.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.richTextBoxTypeChat_PreviewKeyDown);
-            // 
             // pictureBoxHomeChat
             // 
             this.pictureBoxHomeChat.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxHomeChat.Location = new System.Drawing.Point(273, 0);
+            this.pictureBoxHomeChat.Location = new System.Drawing.Point(278, 3);
             this.pictureBoxHomeChat.Name = "pictureBoxHomeChat";
-            this.pictureBoxHomeChat.Size = new System.Drawing.Size(94, 71);
+            this.pictureBoxHomeChat.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxHomeChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxHomeChat.TabIndex = 13;
             this.pictureBoxHomeChat.TabStop = false;
             this.pictureBoxHomeChat.Click += new System.EventHandler(this.pictureBoxHomeChat_Click);
             // 
-            // tabPageReport
-            // 
-            this.tabPageReport.Controls.Add(this.labelResult);
-            this.tabPageReport.Controls.Add(this.dataGridViewReportResult);
-            this.tabPageReport.Controls.Add(this.richTextBoxReportResult);
-            this.tabPageReport.Controls.Add(this.richTextBoxReport);
-            this.tabPageReport.Controls.Add(this.pictureBoxReportHome);
-            this.tabPageReport.Location = new System.Drawing.Point(4, 26);
-            this.tabPageReport.Name = "tabPageReport";
-            this.tabPageReport.Size = new System.Drawing.Size(366, 625);
-            this.tabPageReport.TabIndex = 8;
-            this.tabPageReport.Text = "Report";
-            this.tabPageReport.UseVisualStyleBackColor = true;
-            // 
-            // labelResult
-            // 
-            this.labelResult.AutoSize = true;
-            this.labelResult.Location = new System.Drawing.Point(3, 374);
-            this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(89, 17);
-            this.labelResult.TabIndex = 17;
-            this.labelResult.Text = "Result Details:";
-            // 
-            // dataGridViewReportResult
-            // 
-            this.dataGridViewReportResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewReportResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewReportResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.RepDate,
-            this.Test,
-            this.Result});
-            this.dataGridViewReportResult.Location = new System.Drawing.Point(0, 118);
-            this.dataGridViewReportResult.Name = "dataGridViewReportResult";
-            this.dataGridViewReportResult.RowHeadersVisible = false;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewReportResult.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewReportResult.RowTemplate.Height = 24;
-            this.dataGridViewReportResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewReportResult.Size = new System.Drawing.Size(366, 229);
-            this.dataGridViewReportResult.TabIndex = 16;
-            this.dataGridViewReportResult.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewReportResult_CellClick);
-            // 
-            // RepDate
-            // 
-            this.RepDate.FillWeight = 34.95692F;
-            this.RepDate.HeaderText = "Date";
-            this.RepDate.Name = "RepDate";
-            this.RepDate.ReadOnly = true;
-            // 
-            // Test
-            // 
-            this.Test.FillWeight = 100.5761F;
-            this.Test.HeaderText = "Test";
-            this.Test.Name = "Test";
-            this.Test.ReadOnly = true;
-            // 
-            // Result
-            // 
-            this.Result.FillWeight = 164.467F;
-            this.Result.HeaderText = "Result";
-            this.Result.Name = "Result";
-            this.Result.ReadOnly = true;
-            // 
-            // richTextBoxReportResult
-            // 
-            this.richTextBoxReportResult.Location = new System.Drawing.Point(0, 398);
-            this.richTextBoxReportResult.Name = "richTextBoxReportResult";
-            this.richTextBoxReportResult.Size = new System.Drawing.Size(370, 223);
-            this.richTextBoxReportResult.TabIndex = 15;
-            this.richTextBoxReportResult.Text = "";
-            // 
-            // richTextBoxReport
-            // 
-            this.richTextBoxReport.Location = new System.Drawing.Point(3, 3);
-            this.richTextBoxReport.Name = "richTextBoxReport";
-            this.richTextBoxReport.Size = new System.Drawing.Size(264, 109);
-            this.richTextBoxReport.TabIndex = 3;
-            this.richTextBoxReport.Text = "Results of the tests/ examinations taken.\n\nSelect a report to view the details:";
-            // 
             // pictureBoxReportHome
             // 
             this.pictureBoxReportHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxReportHome.Location = new System.Drawing.Point(273, 3);
+            this.pictureBoxReportHome.Location = new System.Drawing.Point(278, 3);
             this.pictureBoxReportHome.Name = "pictureBoxReportHome";
-            this.pictureBoxReportHome.Size = new System.Drawing.Size(94, 71);
+            this.pictureBoxReportHome.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxReportHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxReportHome.TabIndex = 14;
             this.pictureBoxReportHome.TabStop = false;
             this.pictureBoxReportHome.Click += new System.EventHandler(this.pictureBoxReportHome_Click);
             // 
-            // tabPageGina
-            // 
-            this.tabPageGina.Controls.Add(this.pictureBoxGinaThreshold);
-            this.tabPageGina.Controls.Add(this.pictureBoxGinaRefill);
-            this.tabPageGina.Controls.Add(this.pictureBoxGinaAlert);
-            this.tabPageGina.Controls.Add(this.pictureBoxGinaHome);
-            this.tabPageGina.Controls.Add(this.pictureBoxBackgroundGina);
-            this.tabPageGina.Location = new System.Drawing.Point(4, 26);
-            this.tabPageGina.Name = "tabPageGina";
-            this.tabPageGina.Size = new System.Drawing.Size(366, 625);
-            this.tabPageGina.TabIndex = 9;
-            this.tabPageGina.Text = "Patient";
-            this.tabPageGina.UseVisualStyleBackColor = true;
-            // 
             // pictureBoxGinaThreshold
             // 
             this.pictureBoxGinaThreshold.Image = global::iMOM.Properties.Resources.GinaThreshold;
-            this.pictureBoxGinaThreshold.Location = new System.Drawing.Point(238, 268);
+            this.pictureBoxGinaThreshold.Location = new System.Drawing.Point(251, 262);
             this.pictureBoxGinaThreshold.Name = "pictureBoxGinaThreshold";
             this.pictureBoxGinaThreshold.Size = new System.Drawing.Size(100, 81);
             this.pictureBoxGinaThreshold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1032,7 +1061,7 @@
             // pictureBoxGinaRefill
             // 
             this.pictureBoxGinaRefill.Image = global::iMOM.Properties.Resources.GinaRefill;
-            this.pictureBoxGinaRefill.Location = new System.Drawing.Point(123, 268);
+            this.pictureBoxGinaRefill.Location = new System.Drawing.Point(136, 262);
             this.pictureBoxGinaRefill.Name = "pictureBoxGinaRefill";
             this.pictureBoxGinaRefill.Size = new System.Drawing.Size(100, 81);
             this.pictureBoxGinaRefill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1043,7 +1072,7 @@
             // pictureBoxGinaAlert
             // 
             this.pictureBoxGinaAlert.Image = global::iMOM.Properties.Resources.Alert_Gina;
-            this.pictureBoxGinaAlert.Location = new System.Drawing.Point(10, 268);
+            this.pictureBoxGinaAlert.Location = new System.Drawing.Point(23, 262);
             this.pictureBoxGinaAlert.Name = "pictureBoxGinaAlert";
             this.pictureBoxGinaAlert.Size = new System.Drawing.Size(94, 81);
             this.pictureBoxGinaAlert.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1053,10 +1082,11 @@
             // 
             // pictureBoxGinaHome
             // 
+            this.pictureBoxGinaHome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pictureBoxGinaHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxGinaHome.Location = new System.Drawing.Point(285, 3);
+            this.pictureBoxGinaHome.Location = new System.Drawing.Point(273, 3);
             this.pictureBoxGinaHome.Name = "pictureBoxGinaHome";
-            this.pictureBoxGinaHome.Size = new System.Drawing.Size(78, 55);
+            this.pictureBoxGinaHome.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxGinaHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxGinaHome.TabIndex = 18;
             this.pictureBoxGinaHome.TabStop = false;
@@ -1068,8 +1098,7 @@
             this.pictureBoxBackgroundGina.Image = global::iMOM.Properties.Resources.BackgroundGina;
             this.pictureBoxBackgroundGina.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxBackgroundGina.Name = "pictureBoxBackgroundGina";
-            this.pictureBoxBackgroundGina.Size = new System.Drawing.Size(366, 625);
-            this.pictureBoxBackgroundGina.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBackgroundGina.Size = new System.Drawing.Size(366, 621);
             this.pictureBoxBackgroundGina.TabIndex = 16;
             this.pictureBoxBackgroundGina.TabStop = false;
             // 
@@ -1081,9 +1110,9 @@
             this.tabPagePrescription.Controls.Add(this.groupBox1);
             this.tabPagePrescription.Controls.Add(this.pnlPatientDetails);
             this.tabPagePrescription.Controls.Add(this.groupBox2);
-            this.tabPagePrescription.Location = new System.Drawing.Point(4, 26);
+            this.tabPagePrescription.Location = new System.Drawing.Point(4, 30);
             this.tabPagePrescription.Name = "tabPagePrescription";
-            this.tabPagePrescription.Size = new System.Drawing.Size(366, 625);
+            this.tabPagePrescription.Size = new System.Drawing.Size(366, 621);
             this.tabPagePrescription.TabIndex = 10;
             this.tabPagePrescription.Text = "Prescriptions";
             this.tabPagePrescription.UseVisualStyleBackColor = true;
@@ -1091,9 +1120,9 @@
             // pictureBoxPrescriptionHome
             // 
             this.pictureBoxPrescriptionHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxPrescriptionHome.Location = new System.Drawing.Point(285, 3);
+            this.pictureBoxPrescriptionHome.Location = new System.Drawing.Point(271, 3);
             this.pictureBoxPrescriptionHome.Name = "pictureBoxPrescriptionHome";
-            this.pictureBoxPrescriptionHome.Size = new System.Drawing.Size(78, 55);
+            this.pictureBoxPrescriptionHome.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxPrescriptionHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPrescriptionHome.TabIndex = 12;
             this.pictureBoxPrescriptionHome.TabStop = false;
@@ -1136,7 +1165,7 @@
             this.lblDob.AutoSize = true;
             this.lblDob.Location = new System.Drawing.Point(3, 27);
             this.lblDob.Name = "lblDob";
-            this.lblDob.Size = new System.Drawing.Size(117, 17);
+            this.lblDob.Size = new System.Drawing.Size(147, 21);
             this.lblDob.TabIndex = 2;
             this.lblDob.Text = "DOB: Mar 11, 1987";
             // 
@@ -1145,7 +1174,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(3, 48);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(127, 17);
+            this.lblName.Size = new System.Drawing.Size(153, 21);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name: Gina Gardoni";
             // 
@@ -1154,7 +1183,7 @@
             this.lblPatientName.AutoSize = true;
             this.lblPatientName.Location = new System.Drawing.Point(3, 6);
             this.lblPatientName.Name = "lblPatientName";
-            this.lblPatientName.Size = new System.Drawing.Size(121, 17);
+            this.lblPatientName.Size = new System.Drawing.Size(150, 21);
             this.lblPatientName.TabIndex = 0;
             this.lblPatientName.Text = "Patient ID: W12345";
             // 
@@ -1186,7 +1215,7 @@
             this.lblPrescriptionMessage.ForeColor = System.Drawing.Color.Blue;
             this.lblPrescriptionMessage.Location = new System.Drawing.Point(12, 304);
             this.lblPrescriptionMessage.Name = "lblPrescriptionMessage";
-            this.lblPrescriptionMessage.Size = new System.Drawing.Size(235, 17);
+            this.lblPrescriptionMessage.Size = new System.Drawing.Size(281, 21);
             this.lblPrescriptionMessage.TabIndex = 13;
             this.lblPrescriptionMessage.Text = "Prescription request sent to pharmacy";
             this.lblPrescriptionMessage.Visible = false;
@@ -1207,7 +1236,7 @@
             this.label6.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 189);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(172, 17);
+            this.label6.Size = new System.Drawing.Size(206, 21);
             this.label6.TabIndex = 10;
             this.label6.Text = "Send Request To Pharmacy:";
             // 
@@ -1238,7 +1267,7 @@
             this.chkAllowGeneric.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAllowGeneric.Location = new System.Drawing.Point(15, 154);
             this.chkAllowGeneric.Name = "chkAllowGeneric";
-            this.chkAllowGeneric.Size = new System.Drawing.Size(244, 21);
+            this.chkAllowGeneric.Size = new System.Drawing.Size(303, 25);
             this.chkAllowGeneric.TabIndex = 7;
             this.chkAllowGeneric.Text = "Check if OK to substitute with Generic?";
             this.chkAllowGeneric.UseVisualStyleBackColor = true;
@@ -1248,7 +1277,7 @@
             this.txtDosage.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDosage.Location = new System.Drawing.Point(100, 69);
             this.txtDosage.Name = "txtDosage";
-            this.txtDosage.Size = new System.Drawing.Size(212, 24);
+            this.txtDosage.Size = new System.Drawing.Size(212, 28);
             this.txtDosage.TabIndex = 5;
             this.txtDosage.Text = "5mcg/min IV 3 times daily";
             // 
@@ -1258,7 +1287,7 @@
             this.label5.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 72);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 17);
+            this.label5.Size = new System.Drawing.Size(65, 21);
             this.label5.TabIndex = 4;
             this.label5.Text = "Dosage:";
             // 
@@ -1281,7 +1310,7 @@
             "12"});
             this.cmbNumRefills.Location = new System.Drawing.Point(100, 109);
             this.cmbNumRefills.Name = "cmbNumRefills";
-            this.cmbNumRefills.Size = new System.Drawing.Size(212, 25);
+            this.cmbNumRefills.Size = new System.Drawing.Size(212, 29);
             this.cmbNumRefills.TabIndex = 3;
             // 
             // label4
@@ -1290,7 +1319,7 @@
             this.label4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 17);
+            this.label4.Size = new System.Drawing.Size(102, 21);
             this.label4.TabIndex = 2;
             this.label4.Text = "No. of Refills:";
             // 
@@ -1305,7 +1334,7 @@
             "Terbutaline"});
             this.cmbMedications.Location = new System.Drawing.Point(100, 28);
             this.cmbMedications.Name = "cmbMedications";
-            this.cmbMedications.Size = new System.Drawing.Size(212, 25);
+            this.cmbMedications.Size = new System.Drawing.Size(212, 29);
             this.cmbMedications.TabIndex = 1;
             // 
             // label1
@@ -1314,7 +1343,7 @@
             this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(93, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Medication:";
             // 
@@ -1339,12 +1368,24 @@
             this.tabPageThreshold.Controls.Add(this.label8);
             this.tabPageThreshold.Controls.Add(this.panel2);
             this.tabPageThreshold.Controls.Add(this.pictureBoxThresholdHome);
-            this.tabPageThreshold.Location = new System.Drawing.Point(4, 26);
+            this.tabPageThreshold.Location = new System.Drawing.Point(4, 30);
             this.tabPageThreshold.Name = "tabPageThreshold";
-            this.tabPageThreshold.Size = new System.Drawing.Size(366, 625);
+            this.tabPageThreshold.Size = new System.Drawing.Size(366, 621);
             this.tabPageThreshold.TabIndex = 11;
             this.tabPageThreshold.Text = "Monitor Threshold";
             this.tabPageThreshold.UseVisualStyleBackColor = true;
+            // 
+            // lblThresholdSaved
+            // 
+            this.lblThresholdSaved.AutoSize = true;
+            this.lblThresholdSaved.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThresholdSaved.ForeColor = System.Drawing.Color.Blue;
+            this.lblThresholdSaved.Location = new System.Drawing.Point(42, 545);
+            this.lblThresholdSaved.Name = "lblThresholdSaved";
+            this.lblThresholdSaved.Size = new System.Drawing.Size(129, 21);
+            this.lblThresholdSaved.TabIndex = 29;
+            this.lblThresholdSaved.Text = "Settings updated";
+            this.lblThresholdSaved.Visible = false;
             // 
             // btnSaveThreshold
             // 
@@ -1370,7 +1411,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(36, 382);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(45, 17);
+            this.label20.Size = new System.Drawing.Size(56, 21);
             this.label20.TabIndex = 26;
             this.label20.Text = "Notes:";
             // 
@@ -1379,7 +1420,7 @@
             this.lblThresholdUpdateDate.AutoSize = true;
             this.lblThresholdUpdateDate.Location = new System.Drawing.Point(118, 346);
             this.lblThresholdUpdateDate.Name = "lblThresholdUpdateDate";
-            this.lblThresholdUpdateDate.Size = new System.Drawing.Size(0, 17);
+            this.lblThresholdUpdateDate.Size = new System.Drawing.Size(0, 21);
             this.lblThresholdUpdateDate.TabIndex = 25;
             // 
             // label18
@@ -1387,7 +1428,7 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(32, 346);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(80, 17);
+            this.label18.Size = new System.Drawing.Size(99, 21);
             this.label18.TabIndex = 24;
             this.label18.Text = "Updated On:";
             // 
@@ -1396,7 +1437,7 @@
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(120, 297);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 24);
+            this.textBox3.Size = new System.Drawing.Size(166, 28);
             this.textBox3.TabIndex = 23;
             this.textBox3.Text = "Page (965)-112-3456";
             // 
@@ -1405,7 +1446,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(32, 300);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 17);
+            this.label17.Size = new System.Drawing.Size(59, 21);
             this.label17.TabIndex = 22;
             this.label17.Text = "Action:";
             // 
@@ -1414,7 +1455,7 @@
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(121, 215);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 24);
+            this.textBox2.Size = new System.Drawing.Size(165, 28);
             this.textBox2.TabIndex = 21;
             this.textBox2.Text = "NA";
             // 
@@ -1423,7 +1464,7 @@
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(120, 256);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 24);
+            this.textBox1.Size = new System.Drawing.Size(166, 28);
             this.textBox1.TabIndex = 20;
             this.textBox1.Text = "2";
             // 
@@ -1432,7 +1473,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(32, 259);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(78, 17);
+            this.label16.Size = new System.Drawing.Size(97, 21);
             this.label16.TabIndex = 19;
             this.label16.Text = "Upper Limit:";
             // 
@@ -1441,7 +1482,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(32, 218);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(81, 17);
+            this.label15.Size = new System.Drawing.Size(100, 21);
             this.label15.TabIndex = 18;
             this.label15.Text = "Lower Limit: ";
             // 
@@ -1450,7 +1491,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(117, 168);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(152, 17);
+            this.label14.Size = new System.Drawing.Size(188, 21);
             this.label14.TabIndex = 17;
             this.label14.Text = "(Electronic Fetal Monitor)";
             // 
@@ -1459,7 +1500,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(32, 151);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(196, 17);
+            this.label13.Size = new System.Drawing.Size(243, 21);
             this.label13.TabIndex = 16;
             this.label13.Text = "Monitor Type: Tocodynamometer";
             // 
@@ -1469,7 +1510,7 @@
             this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(11, 114);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(329, 19);
+            this.label8.Size = new System.Drawing.Size(431, 24);
             this.label8.TabIndex = 15;
             this.label8.Text = "Allows provider to set up monitor threshold limits";
             // 
@@ -1489,7 +1530,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 17);
+            this.label2.Size = new System.Drawing.Size(147, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "DOB: Mar 11, 1987";
             // 
@@ -1498,7 +1539,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 17);
+            this.label3.Size = new System.Drawing.Size(153, 21);
             this.label3.TabIndex = 1;
             this.label3.Text = "Name: Gina Gardoni";
             // 
@@ -1507,16 +1548,16 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 6);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 17);
+            this.label7.Size = new System.Drawing.Size(150, 21);
             this.label7.TabIndex = 0;
             this.label7.Text = "Patient ID: W12345";
             // 
             // pictureBoxThresholdHome
             // 
             this.pictureBoxThresholdHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxThresholdHome.Location = new System.Drawing.Point(280, 3);
+            this.pictureBoxThresholdHome.Location = new System.Drawing.Point(273, 3);
             this.pictureBoxThresholdHome.Name = "pictureBoxThresholdHome";
-            this.pictureBoxThresholdHome.Size = new System.Drawing.Size(78, 55);
+            this.pictureBoxThresholdHome.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxThresholdHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxThresholdHome.TabIndex = 14;
             this.pictureBoxThresholdHome.TabStop = false;
@@ -1533,9 +1574,9 @@
             this.tabPageProviderAlert.Controls.Add(this.label19);
             this.tabPageProviderAlert.Controls.Add(this.panel3);
             this.tabPageProviderAlert.Controls.Add(this.pictureBoxProviderAlertHome);
-            this.tabPageProviderAlert.Location = new System.Drawing.Point(4, 26);
+            this.tabPageProviderAlert.Location = new System.Drawing.Point(4, 30);
             this.tabPageProviderAlert.Name = "tabPageProviderAlert";
-            this.tabPageProviderAlert.Size = new System.Drawing.Size(366, 625);
+            this.tabPageProviderAlert.Size = new System.Drawing.Size(366, 621);
             this.tabPageProviderAlert.TabIndex = 12;
             this.tabPageProviderAlert.Text = "Alert";
             this.tabPageProviderAlert.UseVisualStyleBackColor = true;
@@ -1552,6 +1593,18 @@
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "  Message to Patient:";
+            // 
+            // lblMessageSent
+            // 
+            this.lblMessageSent.AutoSize = true;
+            this.lblMessageSent.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessageSent.ForeColor = System.Drawing.Color.Blue;
+            this.lblMessageSent.Location = new System.Drawing.Point(11, 183);
+            this.lblMessageSent.Name = "lblMessageSent";
+            this.lblMessageSent.Size = new System.Drawing.Size(182, 21);
+            this.lblMessageSent.TabIndex = 24;
+            this.lblMessageSent.Text = "Message sent to patient";
+            this.lblMessageSent.Visible = false;
             // 
             // btnSendMessage
             // 
@@ -1589,7 +1642,7 @@
             this.label22.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(11, 173);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(119, 17);
+            this.label22.Size = new System.Drawing.Size(143, 21);
             this.label22.TabIndex = 19;
             this.label22.Text = "Reading Summary:";
             // 
@@ -1598,7 +1651,7 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(125, 134);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(114, 17);
+            this.label21.Size = new System.Drawing.Size(140, 21);
             this.label21.TabIndex = 18;
             this.label21.Text = "Tocodynamometer";
             // 
@@ -1608,7 +1661,7 @@
             this.label19.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(11, 134);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(84, 17);
+            this.label19.Size = new System.Drawing.Size(102, 21);
             this.label19.TabIndex = 17;
             this.label19.Text = "Alert Source:";
             // 
@@ -1628,7 +1681,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 27);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 17);
+            this.label9.Size = new System.Drawing.Size(147, 21);
             this.label9.TabIndex = 2;
             this.label9.Text = "DOB: Mar 11, 1987";
             // 
@@ -1637,7 +1690,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 48);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(127, 17);
+            this.label10.Size = new System.Drawing.Size(153, 21);
             this.label10.TabIndex = 1;
             this.label10.Text = "Name: Gina Gardoni";
             // 
@@ -1646,64 +1699,24 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(3, 6);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 17);
+            this.label12.Size = new System.Drawing.Size(150, 21);
             this.label12.TabIndex = 0;
             this.label12.Text = "Patient ID: W12345";
             // 
             // pictureBoxProviderAlertHome
             // 
             this.pictureBoxProviderAlertHome.Image = global::iMOM.Properties.Resources.homeblue;
-            this.pictureBoxProviderAlertHome.Location = new System.Drawing.Point(280, 3);
+            this.pictureBoxProviderAlertHome.Location = new System.Drawing.Point(276, 3);
             this.pictureBoxProviderAlertHome.Name = "pictureBoxProviderAlertHome";
-            this.pictureBoxProviderAlertHome.Size = new System.Drawing.Size(78, 55);
+            this.pictureBoxProviderAlertHome.Size = new System.Drawing.Size(85, 79);
             this.pictureBoxProviderAlertHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxProviderAlertHome.TabIndex = 16;
             this.pictureBoxProviderAlertHome.TabStop = false;
             this.pictureBoxProviderAlertHome.Click += new System.EventHandler(this.pictureBoxProviderAlertHome_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            // 
-            // timer911
-            // 
-            this.timer911.Enabled = true;
-            this.timer911.Interval = 1000;
-            this.timer911.Tick += new System.EventHandler(this.timer911_Tick);
-            // 
-            // lblMessageSent
-            // 
-            this.lblMessageSent.AutoSize = true;
-            this.lblMessageSent.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessageSent.ForeColor = System.Drawing.Color.Blue;
-            this.lblMessageSent.Location = new System.Drawing.Point(11, 183);
-            this.lblMessageSent.Name = "lblMessageSent";
-            this.lblMessageSent.Size = new System.Drawing.Size(151, 17);
-            this.lblMessageSent.TabIndex = 24;
-            this.lblMessageSent.Text = "Message sent to patient";
-            this.lblMessageSent.Visible = false;
-            // 
-            // lblThresholdSaved
-            // 
-            this.lblThresholdSaved.AutoSize = true;
-            this.lblThresholdSaved.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThresholdSaved.ForeColor = System.Drawing.Color.Blue;
-            this.lblThresholdSaved.Location = new System.Drawing.Point(42, 545);
-            this.lblThresholdSaved.Name = "lblThresholdSaved";
-            this.lblThresholdSaved.Size = new System.Drawing.Size(110, 17);
-            this.lblThresholdSaved.TabIndex = 29;
-            this.lblThresholdSaved.Text = "Settings updated";
-            this.lblThresholdSaved.Visible = false;
-            // 
             // iMOM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(374, 655);
@@ -1717,6 +1730,23 @@
             this.panel1.ResumeLayout(false);
             this.tabControlMain.ResumeLayout(false);
             this.tabPagePatient.ResumeLayout(false);
+            this.tabPageProvider.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProviderPatientList)).EndInit();
+            this.tabPageMonitor.ResumeLayout(false);
+            this.tabPageMonitor.PerformLayout();
+            this.tabPageAlert.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlert)).EndInit();
+            this.tabPageScheduler.ResumeLayout(false);
+            this.tabPage911.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView911)).EndInit();
+            this.tabPageHealthResources.ResumeLayout(false);
+            this.tabPageHealthResources.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResource)).EndInit();
+            this.tabPageProvideChat.ResumeLayout(false);
+            this.tabPageReport.ResumeLayout(false);
+            this.tabPageReport.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReportResult)).EndInit();
+            this.tabPageGina.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealthResources)).EndInit();
@@ -1725,36 +1755,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlertDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox911)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxiMOMPlaceholder)).EndInit();
-            this.tabPageProvider.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProviderPatientList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxiMOMProviderPlaceholder)).EndInit();
-            this.tabPageMonitor.ResumeLayout(false);
-            this.tabPageMonitor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartCapture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonitorPlaceholder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPairing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHome)).EndInit();
-            this.tabPageAlert.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeAlert)).EndInit();
-            this.tabPageScheduler.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSchedulerHome)).EndInit();
-            this.tabPage911.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCall911)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView911)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox911Gif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHome911)).EndInit();
-            this.tabPageHealthResources.ResumeLayout(false);
-            this.tabPageHealthResources.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeResources)).EndInit();
-            this.tabPageProvideChat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeChat)).EndInit();
-            this.tabPageReport.ResumeLayout(false);
-            this.tabPageReport.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReportResult)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReportHome)).EndInit();
-            this.tabPageGina.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaThreshold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaRefill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGinaAlert)).EndInit();
