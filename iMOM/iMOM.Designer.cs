@@ -649,8 +649,8 @@
             this.richTextBoxScheduler.Name = "richTextBoxScheduler";
             this.richTextBoxScheduler.Size = new System.Drawing.Size(274, 164);
             this.richTextBoxScheduler.TabIndex = 3;
-            this.richTextBoxScheduler.Text = "View alll your prenatal appointments with your provider along with reminders for " +
-    "ultrasound, blood work appointments";
+            this.richTextBoxScheduler.Text = "View all your prenatal appointments with your provider along with reminders for u" +
+    "ltrasound, blood work appointments";
             // 
             // calendarScheduler
             // 
